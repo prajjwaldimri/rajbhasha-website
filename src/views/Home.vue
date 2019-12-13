@@ -27,8 +27,8 @@ export default {
 
 .v-toolbar.v-toolbar--bottom {
   bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
-  border-radius: 0.3rem;
+  left: 4rem;
+  right: 4rem;
+  border-radius: 0.2rem;
 }
 </style>

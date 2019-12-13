@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar floating bottom absolute dark dense>
+  <v-toolbar floating bottom absolute dark dense class="blue-grey darken-4">
     <v-toolbar-items class="toolbar-items">
       <v-btn text class=".subtitle-1">About</v-btn>
       <v-btn text class=".subtitle-1">Work</v-btn>
