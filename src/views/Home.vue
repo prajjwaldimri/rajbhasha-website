@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HelloWorld />
-    <FloatingNav />
+    <FloatingNav ma-4 />
   </div>
 </template>
 
@@ -18,3 +18,17 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.home {
+  height: 100vh;
+  background-color: grey;
+}
+
+.v-toolbar.v-toolbar--bottom {
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  border-radius: 0.3rem;
+}
+</style>
