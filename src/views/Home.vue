@@ -1,34 +1,17 @@
-<template>
-  <div class="home">
-    <HelloWorld />
-    <FloatingNav ma-4 />
-  </div>
-</template>
+<template> <div></div></template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-import FloatingNav from "@/components/FloatingNav.vue";
+// import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: "home",
-  components: {
-    HelloWorld,
-    FloatingNav
-  }
+  name: "home"
 };
 </script>
 
 <style lang="scss">
-.home {
-  height: 100vh;
-  background-color: grey;
-}
-
-.v-toolbar.v-toolbar--bottom {
-  bottom: 1rem;
-  left: 4rem;
-  right: 4rem;
-  border-radius: 0.2rem;
+// Added this workaround for the Floating Nav from https://github.com/vuetifyjs/vuetify/issues/8067
+.v-item-group.v-bottom-navigation .v-btn.v-size--default {
+  height: inherit;
 }
 </style>

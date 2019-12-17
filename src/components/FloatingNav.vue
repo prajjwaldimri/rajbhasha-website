@@ -1,20 +1,21 @@
-<template>
-  <v-toolbar floating bottom absolute dark dense class="blue-grey darken-4">
-    <v-toolbar-items class="toolbar-items">
-      <v-btn text class=".subtitle-1">About</v-btn>
-      <v-btn text class=".subtitle-1">Work</v-btn>
-      <v-btn text class=".subtitle-1">News</v-btn>
-      <v-btn text class=".subtitle-1">Contact</v-btn>
-    </v-toolbar-items>
-  </v-toolbar>
+<template lang="pug">
+  v-toolbar(absolute bottom).floatingNav
+    v-toolbar-items.floatingNavItems
+      v-btn(text) Hamare Baare main
+      v-btn(text) Karyakalap
+      v-btn(text) Sansaadhan
+      v-btn(text) Avashyak Links
+      v-btn(text) Sampark Karein
 </template>
 
 <style lang="scss">
-.v-toolbar__content {
-  width: 100%;
+.floatingNav {
+  bottom: 1rem !important;
+  left: 2rem;
+  right: 2rem;
 }
 
-.toolbar-items {
+.floatingNavItems {
   width: 100%;
   justify-content: space-around;
 }

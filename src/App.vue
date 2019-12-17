@@ -1,15 +1,18 @@
-<template>
-  <v-app>
-    <router-view />
-  </v-app>
+<template lang="pug">
+  v-app
+    v-content
+      v-container(fluid)
+        router-view
+      FloatingNav
+
 </template>
 
 <script>
+import FloatingNav from "@/components/FloatingNav.vue";
 export default {
   name: "App",
-
-  data: () => ({
-    //
-  })
+  components: {
+    FloatingNav
+  }
 };
 </script>
