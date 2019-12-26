@@ -1,21 +1,45 @@
-<template lang="pug"> 
+<template lang="pug">
   .home
     Navbar
     v-content
-      v-container
-        h1 Hello
+      .home-content
+        .left
+          span.display-3 Rajbhasha Samiti
+        .right
+          VueperSlides(autoplay fade :arrows="false" :slideRatio="1/2").no-shadow
+            VueperSlide(v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" :image="slide.image")
     FloatingNav
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
 import FloatingNav from "@/components/FloatingNav.vue";
+
+import { VueperSlides, VueperSlide } from "vueperslides";
+import "vueperslides/dist/vueperslides.css";
+
 export default {
   name: "home",
   components: {
     Navbar,
-    FloatingNav
-  }
+    FloatingNav,
+    VueperSlides,
+    VueperSlide
+  },
+  data: () => ({
+    slides: [
+      {
+        title: "Slide #1",
+        content: "Slide content.",
+        image: require("@/assets/carriage.jpg")
+      },
+      {
+        title: "Slide #2",
+        content: "Slide content.",
+        image: require("@/assets/clouds.jpg")
+      }
+    ]
+  })
 };
 </script>
 
@@ -31,5 +55,29 @@ export default {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+
+  .left {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    span {
+      text-align: right;
+      transform: translateX(10%);
+      z-index: 2;
+      color: #feee77;
+      -webkit-text-stroke: -200px black;
+      font-weight: 400;
+    }
+  }
+
+  .right {
+    width: 60%;
+  }
 }
 </style>
