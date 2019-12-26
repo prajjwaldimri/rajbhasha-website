@@ -6,7 +6,7 @@
         .left
           span.display-3 Rajbhasha Samiti
         .right
-          VueperSlides(autoplay fade :arrows="false" :slideRatio="1/2").no-shadow
+          VueperSlides(autoplay fade :arrows="false" :slideRatio="3/5").no-shadow
             VueperSlide(v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" :image="slide.image")
     FloatingNav
 </template>
