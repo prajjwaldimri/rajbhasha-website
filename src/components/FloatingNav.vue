@@ -1,11 +1,11 @@
 <template lang="pug">
   v-toolbar(absolute bottom).floatingNav
     v-toolbar-items.floatingNavItems
-      v-btn(text).nav-1 Hamare Baare main
-      v-btn(text) Karyakalap
-      v-btn(text) Sansaadhan
-      v-btn(text) Avashyak Links
-      v-btn(text) Sampark Karein
+      v-btn(text).nav-1 हमारे बारे मे 
+      v-btn(text) कार्यकलाप 
+      v-btn(text) संसाधन 
+      v-btn(text) आवश्यक लिंक्स 
+      v-btn(text) संपर्क करे 
 
     .expanded-menu
 </template>
