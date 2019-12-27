@@ -1,10 +1,9 @@
 <template lang="pug">
   v-toolbar(flat color="transparent")
     v-toolbar-title 
-      .logo
+      a.logo(href="http://www.nitgoa.ac.in/")
         v-img(src="@/assets/nitlogo.png" height="24" width="24" )   
-        span 
-          a(href='http://www.nitgoa.ac.in/') राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
+        span राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
 </template>
 
 <script>
@@ -13,10 +12,15 @@ export default {};
 
 <style lang="scss">
 .logo {
-  span {
-    padding-left: 0.5rem;
-  }
   display: flex;
   align-items: center;
+  justify-items: flex-;
+  span {
+    padding-left: 0.5rem;
+    color: white;
+  }
+  &:link {
+    text-decoration: none;
+  }
 }
 </style> 
