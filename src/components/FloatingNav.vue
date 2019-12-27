@@ -9,10 +9,18 @@
 
     .expanded-menu
       .expanded-menu-items
-        v-btn(text).textDecorations सदस्य 
-        v-btn(text).textDecorations संदेश
-        v-btn(text).textDecorations राजभाषा संकल्प
-        v-btn(text).textDecorations अभिभाषण /विचार 
+        .sadsya.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations सदस्य 
+        .sandesh.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations संदेश
+        .rajsabha-sankalp.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations राजभाषा संकल्प
+        .vichar.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations अभिभाषण /विचार 
 
               
 </template>
@@ -23,7 +31,13 @@
   font-size: 18px !important;
   font-weight: 500 !important;
 }
-
+.humare-baare-mein {
+  display: flex;
+  // flex: wrap;
+  // flex: 1 1 0;
+  align-items: center;
+  justify-content: space-around;
+}
 .floatingNav {
   position: fixed !important;
   bottom: 1rem !important;
@@ -45,20 +59,20 @@
     transform: translateY(-80%) translateX(-1rem);
   }
 
-  opacity: 0;
+  opacity: 100%;
   height: 200%;
   width: 100%;
   position: absolute;
   background: #424242;
-  transform: translateY(80%) translateX(-1rem);
+  transform: translateY(-80%) translateX(-1rem);
   transition: all 400ms;
 }
 
 .expanded-menu-items {
   height: 100%;
   display: flex;
-  flex: wrap;
-  flex: 1 1 0;
+  // flex: wrap;
+  // flex: 1 1 0;
   align-items: center;
   justify-content: space-around;
 }
