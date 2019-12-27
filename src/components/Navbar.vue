@@ -3,7 +3,8 @@
     v-toolbar-title 
       .logo
         v-img(src="@/assets/nitlogo.png" height="24" width="24" )   
-        span राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
+        span 
+          a(href='http://www.nitgoa.ac.in/') राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
 </template>
 
 <script>
