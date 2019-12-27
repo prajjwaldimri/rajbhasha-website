@@ -39,7 +39,7 @@
   width: 100%;
   position: absolute;
   background: #424242;
-  transform: translateY(40%) translateX(-1rem);
+  transform: translateY(80%) translateX(-1rem);
   transition: all 400ms;
 }
 </style>
