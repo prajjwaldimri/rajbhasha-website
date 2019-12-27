@@ -22,6 +22,7 @@
   bottom: 1rem !important;
   left: 2rem;
   right: 2rem;
+  z-index: 2;
 }
 
 .floatingNavItems {
@@ -30,7 +31,9 @@
 }
 
 .expanded-menu {
+  z-index: 2;
   &.active {
+    z-index: 2;
     opacity: 100%;
     transform: translateY(-80%) translateX(-1rem);
   }
