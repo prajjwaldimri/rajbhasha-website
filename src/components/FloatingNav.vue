@@ -1,11 +1,11 @@
 <template lang="pug">
-  v-toolbar(absolute bottom).floatingNav
+  v-toolbar(bottom).floatingNav
     v-toolbar-items.floatingNavItems
-      v-btn(text).nav-1 हमारे बारे मे 
-      v-btn(text) कार्यकलाप 
-      v-btn(text) संसाधन 
-      v-btn(text) आवश्यक लिंक्स 
-      v-btn(text) संपर्क करे 
+      v-btn(text).nav-1.textDecorations  हमारे बारे में 
+      v-btn(text).textDecorations कार्यकलाप 
+      v-btn(text).textDecorations संसाधन 
+      v-btn(text).textDecorations आवश्यक लिंक्स 
+      v-btn(text).textDecorations संपर्क करे 
 
     .expanded-menu
       .expanded-menu-items
@@ -18,10 +18,18 @@
 </template>
 
 <style lang="scss">
+.textDecorations {
+  letter-spacing: initial !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
 .floatingNav {
+  position: fixed !important;
   bottom: 1rem !important;
   left: 2rem;
   right: 2rem;
+  z-index: 2;
 }
 
 .floatingNavItems {
@@ -30,8 +38,11 @@
 }
 
 .expanded-menu {
+  z-index: 2;
   &.active {
+    z-index: 2;
     opacity: 100%;
+    transform: translateY(-80%) translateX(-1rem);
   }
 
   opacity: 0;
@@ -39,8 +50,8 @@
   width: 100%;
   position: absolute;
   background: #424242;
-  transform: translateY(-80%) translateX(-1rem);
-  transition: all 300ms;
+  transform: translateY(80%) translateX(-1rem);
+  transition: all 400ms;
 }
 
 .expanded-menu-items {
