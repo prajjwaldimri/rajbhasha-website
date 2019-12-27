@@ -9,10 +9,10 @@
 
     .expanded-menu
       .expanded-menu-items
-        v-btn(text) सदस्य 
-        v-btn(text) संदेश
-        v-btn(text) राजभाषा संकल्प
-        v-btn(text) अभिभाषण /विचार 
+        v-btn(text).textDecorations सदस्य 
+        v-btn(text).textDecorations संदेश
+        v-btn(text).textDecorations राजभाषा संकल्प
+        v-btn(text).textDecorations अभिभाषण /विचार 
 
               
 </template>
@@ -55,8 +55,11 @@
 }
 
 .expanded-menu-items {
+  height: 100%;
   display: flex;
+  flex: wrap;
   flex: 1 1 0;
+  align-items: center;
   justify-content: space-around;
 }
 </style>
