@@ -1,16 +1,22 @@
 <template lang="pug">
   v-toolbar(bottom).floatingNav
     v-toolbar-items.floatingNavItems
-      v-btn(text).nav-1 हमारे बारे मे 
-      v-btn(text) कार्यकलाप 
-      v-btn(text) संसाधन 
-      v-btn(text) आवश्यक लिंक्स 
-      v-btn(text) संपर्क करे 
+      v-btn(text).nav-1.textDecorations  हमारे बारे मे 
+      v-btn(text).textDecorations कार्यकलाप 
+      v-btn(text).textDecorations संसाधन 
+      v-btn(text).textDecorations आवश्यक लिंक्स 
+      v-btn(text).textDecorations संपर्क करे 
 
     .expanded-menu
 </template>
 
 <style lang="scss">
+.textDecorations {
+  letter-spacing: initial !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
 .floatingNav {
   position: fixed !important;
   bottom: 1rem !important;
