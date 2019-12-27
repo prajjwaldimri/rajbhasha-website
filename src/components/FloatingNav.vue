@@ -59,12 +59,12 @@
     transform: translateY(-80%) translateX(-1rem);
   }
 
-  opacity: 100%;
+  opacity: 0;
   height: 200%;
   width: 100%;
   position: absolute;
   background: #424242;
-  transform: translateY(-80%) translateX(-1rem);
+  transform: translateY(80%) translateX(-1rem);
   transition: all 400ms;
 }
 
