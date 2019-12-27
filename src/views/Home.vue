@@ -4,7 +4,8 @@
     v-content
       .home-content
         .left
-          span.display-4 राजभाषा प्रकोष्ठ
+          h2.display-4 राजभाषा
+          h2.display-4 प्रकोष्ठ
         .right
           VueperSlides(autoplay fade :arrows="false" :slideRatio="3/5").no-shadow
             VueperSlide(v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" :image="slide.image")
@@ -65,14 +66,17 @@ export default {
   .left {
     width: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    span {
+    h2 {
       text-align: right;
       transform: translateX(10%);
       z-index: 2;
       color: #feee77;
       -webkit-text-stroke: -200px black;
       font-weight: 400;
+      font-size: 8rem !important;
+      padding: 3%;
     }
   }
 
