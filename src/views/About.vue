@@ -1,14 +1,17 @@
 <template lang="pug">
-  div
+  .about
     Navbar
 
     v-content
       v-container
         .gandhi-message-section
-          .text
+          .text.text-yellow
             span.display-2 मैं हिन्दी के जरिए प्रांतीय भाषाओं को दबाना नहीं चाहता किन्तु उनके साथ हिन्दी को भी मिला देना चाहता हूँ।
             h2.headline - महात्मा गांधी
           v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
+
+        .team-members
+          span.display-2.text-yellow सदस्य
 
     FloatingNav
 </template>
@@ -27,6 +30,10 @@ export default {
 </script>
 
 <style lang="scss">
+.about {
+  padding-bottom: 128px;
+}
+
 .gandhi-message-section {
   display: flex;
   align-items: center;
@@ -48,7 +55,10 @@ export default {
       }
     }
     width: 70%;
-    color: #feee77;
   }
+}
+
+.team-members {
+  padding-top: 1rem;
 }
 </style>

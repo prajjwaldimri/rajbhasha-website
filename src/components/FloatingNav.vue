@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-toolbar(absolute bottom).floatingNav
+  v-toolbar(bottom).floatingNav
     v-toolbar-items.floatingNavItems
       v-btn(text).nav-1 हमारे बारे मे 
       v-btn(text) कार्यकलाप 
@@ -12,6 +12,7 @@
 
 <style lang="scss">
 .floatingNav {
+  position: fixed !important;
   bottom: 1rem !important;
   left: 2rem;
   right: 2rem;

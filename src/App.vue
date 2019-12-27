@@ -9,3 +9,9 @@ export default {
   name: "App"
 };
 </script>
+
+<style lang="scss">
+.text-yellow {
+  color: #feee77;
+}
+</style>
