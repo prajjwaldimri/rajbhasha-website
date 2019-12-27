@@ -1,7 +1,7 @@
 <template lang="pug">
   v-toolbar(bottom).floatingNav
     v-toolbar-items.floatingNavItems
-      v-btn(text).nav-1.textDecorations  हमारे बारे मे 
+      v-btn(text).nav-1.textDecorations  हमारे बारे में 
       v-btn(text).textDecorations कार्यकलाप 
       v-btn(text).textDecorations संसाधन 
       v-btn(text).textDecorations आवश्यक लिंक्स 
