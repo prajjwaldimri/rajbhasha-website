@@ -1,18 +1,17 @@
 <template lang="pug">
-  v-toolbar(bottom).floatingNav
+  v-toolbar(bottom).floatingNav 
     v-toolbar-items.floatingNavItems
       v-btn(text).nav-1.textDecorations  हमारे बारे में 
-      v-btn(text).textDecorations कार्यकलाप 
+      v-btn(text).nav-2.textDecorations कार्यकलाप 
       v-btn(text).textDecorations संसाधन 
       v-btn(text).textDecorations आवश्यक लिंक्स 
       v-btn(text).textDecorations संपर्क करे 
 
-    .expanded-menu
+    v-toolbar-items.expanded-menu
       .expanded-menu-items
         .sadsya.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
           v-btn(text).textDecorations सदस्य 
-        .sandesh.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
           v-btn(text).textDecorations संदेश
         .rajsabha-sankalp.humare-baare-mein
@@ -51,7 +50,8 @@
   justify-content: space-around;
 }
 
-.expanded-menu {
+.expanded-menu,
+.expanded-menu2 {
   z-index: 2;
   &.active {
     z-index: 2;
@@ -68,8 +68,8 @@
   transition: all 400ms;
 }
 
-.expanded-menu-items {
-  height: 100%;
+.expanded-menu-items,
+.expanded-menu-items2 {
   display: flex;
   // flex: wrap;
   // flex: 1 1 0;
@@ -90,6 +90,17 @@ export default {
 
     menu.addEventListener("mouseout", () => {
       menu.classList.remove("active");
+    });
+
+    const menu2 = document.getElementsByClassName("expanded-menu2")[0];
+    const floatingNavItem2 = document.getElementsByClassName("nav-2")[0];
+
+    floatingNavItem2.addEventListener("mouseover", () => {
+      menu2.classList.add("active");
+    });
+
+    menu2.addEventListener("mouseout", () => {
+      menu2.classList.remove("active");
     });
   }
 };
