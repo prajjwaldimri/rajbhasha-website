@@ -3,15 +3,18 @@
     v-toolbar-items.floatingNavItems
       v-btn(text).nav-1.textDecorations  हमारे बारे में 
       v-btn(text).nav-2.textDecorations कार्यकलाप 
-      v-btn(text).textDecorations संसाधन 
+      v-btn(text).nav-3.textDecorations संसाधन 
       v-btn(text).textDecorations आवश्यक लिंक्स 
-      v-btn(text).textDecorations संपर्क करे 
+      v-btn(text).nav-5.textDecorations संपर्क करे 
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
 
     v-toolbar-items.expanded-menu
       .expanded-menu-items
         .sadsya.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
           v-btn(text).textDecorations सदस्य 
+        .sandesh.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
           v-btn(text).textDecorations संदेश
         .rajsabha-sankalp.humare-baare-mein
@@ -21,7 +24,48 @@
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
           v-btn(text).textDecorations अभिभाषण /विचार 
 
-              
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    v-toolbar-items.expanded-menu2
+      .expanded-menu-items2
+        .hindi-karyakalap.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations हिंदी कार्यशाला  
+        .hindi-karyalaya-adesh.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations हिंदी कार्यालय आदेश
+        .hindi-divas-karyakram.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    v-toolbar-items.expanded-menu3
+      .expanded-menu-items3
+        .hindi-leyka.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations हिंदी लेखा
+        .hindi-shabdavali.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations हिंदी  शब्दावली
+        .varshik-patrika.humare-baare-mein
+          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-btn(text).textDecorations वार्षिक पत्रिका
+          
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    v-toolbar-items.expanded-menu5
+      .expanded-menu-items5
+        .span-items.humare-baare-mein.textDecorations
+          span notEmailAddress@gmail.com
+          
+          span dontKnowEmailAddress@gmail.com
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 </template>
 
 <style lang="scss">
@@ -32,8 +76,6 @@
 }
 .humare-baare-mein {
   display: flex;
-  // flex: wrap;
-  // flex: 1 1 0;
   align-items: center;
   justify-content: space-around;
 }
@@ -51,7 +93,9 @@
 }
 
 .expanded-menu,
-.expanded-menu2 {
+.expanded-menu2,
+.expanded-menu3,
+.expanded-menu5 {
   z-index: 2;
   &.active {
     z-index: 2;
@@ -69,12 +113,22 @@
 }
 
 .expanded-menu-items,
-.expanded-menu-items2 {
+.expanded-menu-items2,
+.expanded-menu-items3,
+.expanded-menu-items5 {
   display: flex;
-  // flex: wrap;
-  // flex: 1 1 0;
+  flex: wrap;
+  flex: 1 1 0;
   align-items: center;
   justify-content: space-around;
+}
+
+.span-items {
+  display: flex;
+  flex: 1 1 0;
+  span {
+    justify-items: space-around;
+  }
 }
 </style>
 
@@ -92,6 +146,8 @@ export default {
       menu.classList.remove("active");
     });
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
     const menu2 = document.getElementsByClassName("expanded-menu2")[0];
     const floatingNavItem2 = document.getElementsByClassName("nav-2")[0];
 
@@ -102,6 +158,34 @@ export default {
     menu2.addEventListener("mouseout", () => {
       menu2.classList.remove("active");
     });
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    const menu3 = document.getElementsByClassName("expanded-menu3")[0];
+    const floatingNavItem3 = document.getElementsByClassName("nav-3")[0];
+
+    floatingNavItem3.addEventListener("mouseover", () => {
+      menu3.classList.add("active");
+    });
+
+    menu3.addEventListener("mouseout", () => {
+      menu3.classList.remove("active");
+    });
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    const menu5 = document.getElementsByClassName("expanded-menu5")[0];
+    const floatingNavItem5 = document.getElementsByClassName("nav-5")[0];
+
+    floatingNavItem5.addEventListener("mouseover", () => {
+      menu5.classList.add("active");
+    });
+
+    menu5.addEventListener("mouseout", () => {
+      menu5.classList.remove("active");
+    });
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
   }
 };
 </script>
