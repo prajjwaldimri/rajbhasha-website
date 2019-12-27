@@ -4,7 +4,7 @@
     v-content
       .home-content
         .left
-          span.display-3 Rajbhasha Samiti
+          span.display-4 राजभाषा प्रकोष्ठ
         .right
           VueperSlides(autoplay fade :arrows="false" :slideRatio="3/5").no-shadow
             VueperSlide(v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" :image="slide.image")
