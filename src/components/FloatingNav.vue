@@ -26,14 +26,15 @@
 .expanded-menu {
   &.active {
     opacity: 100%;
+    transform: translateY(-80%) translateX(-1rem);
   }
   opacity: 0;
   height: 200%;
   width: 100%;
   position: absolute;
   background: #424242;
-  transform: translateY(-80%) translateX(-1rem);
-  transition: all 300ms;
+  transform: translateY(30%) translateX(-1rem);
+  transition: all 400ms;
 }
 </style>
 
