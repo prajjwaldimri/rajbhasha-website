@@ -8,6 +8,13 @@
       v-btn(text) संपर्क करे 
 
     .expanded-menu
+      .expanded-menu-items
+        v-btn(text) सदस्य 
+        v-btn(text) संदेश
+        v-btn(text) राजभाषा संकल्प
+        v-btn(text) अभिभाषण /विचार 
+
+              
 </template>
 
 <style lang="scss">
@@ -26,6 +33,7 @@
   &.active {
     opacity: 100%;
   }
+
   opacity: 0;
   height: 200%;
   width: 100%;
@@ -33,6 +41,12 @@
   background: #424242;
   transform: translateY(-80%) translateX(-1rem);
   transition: all 300ms;
+}
+
+.expanded-menu-items {
+  display: flex;
+  flex: 1 1 0;
+  justify-content: space-around;
 }
 </style>
 
