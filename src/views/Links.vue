@@ -5,7 +5,7 @@
         v-content
         v-container
             v-toolbar-title
-                .text
+                .links-text
                     a(href="http://www.nitgoa.ac.in/")
                         span.text-yellow sansthan ki rajbhasha prakoshtha ki timahi report
                     a(href="href=https://rajbhasha.nic.in/hi/hindi-vocabulary")
@@ -35,7 +35,7 @@ export default {
 .imp-link {
   padding-bottom: 128px;
 }
-.text {
+.links-text {
   display: flex;
   flex-direction: column;
   height: 75rem;
