@@ -1,6 +1,6 @@
 <template lang="pug">
   .about
-    Navbar
+    Navbar(:breadcrumbs="breadcrumbs")
 
     v-content
       v-container
@@ -39,7 +39,19 @@ export default {
   },
   data() {
     return {
-      items: [1, 2, 3, 4, 5]
+      items: [1, 2, 3, 4, 5],
+      breadcrumbs: [
+        {
+          text: "Home",
+          disabled: false,
+          href: "/"
+        },
+        {
+          text: "About",
+          disabled: true,
+          href: "/about"
+        }
+      ]
     };
   }
 };

@@ -1,6 +1,6 @@
 <template lang="pug">
   .home
-    Navbar(isFlat="true")
+    Navbar(isFlat="true" :breadcrumbs="breadcrumbs")
     v-content
       .home-content
         .left
@@ -38,6 +38,13 @@ export default {
         title: "Slide #2",
         content: "Slide content.",
         image: require("@/assets/clouds.jpg")
+      }
+    ],
+    breadcrumbs: [
+      {
+        text: "Home",
+        disabled: true,
+        href: "/"
       }
     ]
   })
