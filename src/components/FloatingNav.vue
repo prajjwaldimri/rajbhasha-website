@@ -12,16 +12,16 @@
     v-toolbar-items.expanded-menu
       .expanded-menu-items
         .sadsya.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations सदस्य
         .sandesh.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations संदेश
         .rajsabha-sankalp.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations राजभाषा संकल्प
         .vichar.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations अभिभाषण /विचार
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,13 +29,13 @@
     v-toolbar-items.expanded-menu2
       .expanded-menu-items2
         .hindi-karyakalap.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी कार्यशाला
         .hindi-karyalaya-adesh.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी कार्यालय आदेश
         .hindi-divas-karyakram.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,13 +43,13 @@
     v-toolbar-items.expanded-menu3
       .expanded-menu-items3
         .hindi-leyka.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी लेखा
         .hindi-shabdavali.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी  शब्दावली
         .varshik-patrika.humare-baare-mein
-          v-img(src="@/assets/gandhi.jpg" height="24" width="24")
+          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations वार्षिक पत्रिका
 
 
