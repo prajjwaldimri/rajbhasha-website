@@ -1,18 +1,24 @@
 <template lang="pug">
-    v-toolbar-title
-      .imp-link
-        a.link1(href="http://www.nitgoa.ac.in/")
-            span sansthan ki rajbhasha prakoshtha ki timahi report
-        a.link2(href="href=https://rajbhasha.nic.in/hi/hindi-vocabulary")
-            span hindi shabadkosh
-        a.link2(href="https://mantra-rajbhasha.rb-aai.in/")
-            span hindi anuvad ki link
-        a.link3(href="http://e-mahashabdkosh.rb-aai.in/")
-            span e-mahashabadkosh ki link
-        a.link4(href="http://www.nitgoa.ac.in/")
-            span microsoft indic input tool
-        a.link5(href="https://rajbhasha.nic.in/")
-            span bharat sarkar grih mantralaya ki rajbhasha vibhag ki website  
+    .imp-link
+        Navbar
+
+        v-content
+        v-container
+            v-toolbar-title
+                .text
+                    a(href="http://www.nitgoa.ac.in/")
+                        span.text-yellow sansthan ki rajbhasha prakoshtha ki timahi report
+                    a(href="href=https://rajbhasha.nic.in/hi/hindi-vocabulary")
+                        span.text-yellow hindi shabadkosh
+                    a(href="https://mantra-rajbhasha.rb-aai.in/")
+                        span.text-yellow hindi anuvad ki link
+                    a(href="http://e-mahashabdkosh.rb-aai.in/")
+                        span.text-yellow  e-mahashabadkosh ki link
+                    a(href="https://www.microsoft.com/en-in/bhashaindia/downloads.aspx")
+                        span.text-yellow microsoft indic input tool
+                    a(href="https://rajbhasha.nic.in/")
+                        span.text-yellow bharat sarkar grih mantralaya ki rajbhasha vibhag ki website  
+        FloatingNav
 </template>
 <script>
 import Navbar from "@/components/Navbar.vue";
@@ -27,12 +33,16 @@ export default {
 </script>
 <style lang="scss">
 .imp-link {
+  padding-bottom: 128px;
+}
+.text {
   display: flex;
+  flex-direction: column;
+  height: 75rem;
   align-items: center;
-  justify-items: flex-;
   span {
-    padding-left: 0.5rem;
-    color: white;
+    font-family: "Poppins", sans-serif !important;
+    line-height: 4rem;
   }
   &:link {
     text-decoration: none;
