@@ -3,6 +3,9 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Links from "../views/Links.vue";
+import Workshop from "../views/Workshop.vue";
+import HindiDayProgram from "../views/HindiDayProgram.vue";
+import OfficeOrder from "../views/OfficeOrder.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +24,21 @@ const routes = [
     path: "/links",
     name: "links",
     component: Links
+  },
+  {
+    path: "/workshop",
+    name: "workshop",
+    component: Workshop
+  },
+  {
+    path: "/hindiDayProgram",
+    name: "hindiDayProgram",
+    component: HindiDayProgram
+  },
+  {
+    path: "/officeOrder",
+    name: "officeOrder",
+    component: OfficeOrder
   }
 ];
 
