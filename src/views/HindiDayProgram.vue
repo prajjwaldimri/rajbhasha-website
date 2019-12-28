@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    Navbar(pageName="Office Order")
+    Navbar(pageName="Hindi Day Program")
     v-content
       v-container(fluid)
         v-simple-table(:dense='dense' :fixed-header='fixedHeader' )
