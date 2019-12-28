@@ -1,6 +1,6 @@
 <template lang="pug">
   .imp-link
-    Navbar(pageName="Important Links")
+    Navbar(:breadcrumbs="breadcrumbs")
     v-content
       v-container
         .links-text
@@ -38,6 +38,22 @@ export default {
   components: {
     Navbar,
     FloatingNav
+  },
+  data() {
+    return {
+      breadcrumbs: [
+        {
+          text: "Home",
+          disabled: false,
+          href: "/"
+        },
+        {
+          text: "Important Links",
+          disabled: true,
+          href: "/links"
+        }
+      ]
+    };
   }
 };
 </script>
@@ -61,6 +77,7 @@ export default {
   }
   a {
     outline: none;
+    display: flex;
   }
 }
 </style>
