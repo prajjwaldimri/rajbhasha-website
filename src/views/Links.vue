@@ -5,7 +5,7 @@
       v-container
         .links-text
           v-row
-            a(href="href=https://rajbhasha.nic.in/hi/hindi-vocabulary" target="_blank")
+            a(href="https://rajbhasha.nic.in/hi/hindi-vocabulary" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
               span.text-yellow hindi shabadkosh
           v-row
