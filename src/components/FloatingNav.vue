@@ -139,52 +139,51 @@ export default {
     const menu = document.getElementsByClassName("expanded-menu")[0];
     const floatingNavItem = document.getElementsByClassName("nav-1")[0];
 
+    const menu2 = document.getElementsByClassName("expanded-menu2")[0];
+    const floatingNavItem2 = document.getElementsByClassName("nav-2")[0];
+
+    const menu3 = document.getElementsByClassName("expanded-menu3")[0];
+    const floatingNavItem3 = document.getElementsByClassName("nav-3")[0];
+
+    const menu5 = document.getElementsByClassName("expanded-menu5")[0];
+    const floatingNavItem5 = document.getElementsByClassName("nav-5")[0];
+
+    const activeRemover = () => {
+      menu.classList.remove("active");
+      menu2.classList.remove("active");
+      menu3.classList.remove("active");
+      menu5.classList.remove("active");
+    };
+
     floatingNavItem.addEventListener("mouseover", () => {
       menu.classList.add("active");
     });
 
-    menu.addEventListener("mouseleave", () => {
-      menu.classList.remove("active");
-    });
+    menu.addEventListener("mouseleave", activeRemover);
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
-
-    const menu2 = document.getElementsByClassName("expanded-menu2")[0];
-    const floatingNavItem2 = document.getElementsByClassName("nav-2")[0];
 
     floatingNavItem2.addEventListener("mouseover", () => {
       menu2.classList.add("active");
     });
 
-    menu2.addEventListener("mouseleave", () => {
-      menu2.classList.remove("active");
-    });
+    menu2.addEventListener("mouseleave", activeRemover);
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
-
-    const menu3 = document.getElementsByClassName("expanded-menu3")[0];
-    const floatingNavItem3 = document.getElementsByClassName("nav-3")[0];
 
     floatingNavItem3.addEventListener("mouseover", () => {
       menu3.classList.add("active");
     });
 
-    menu3.addEventListener("mouseleave", () => {
-      menu3.classList.remove("active");
-    });
+    menu3.addEventListener("mouseleave", activeRemover);
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
-
-    const menu5 = document.getElementsByClassName("expanded-menu5")[0];
-    const floatingNavItem5 = document.getElementsByClassName("nav-5")[0];
 
     floatingNavItem5.addEventListener("mouseover", () => {
       menu5.classList.add("active");
     });
 
-    menu5.addEventListener("mouseleave", () => {
-      menu5.classList.remove("active");
-    });
+    menu5.addEventListener("mouseleave", activeRemover);
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
   }
