@@ -11,16 +11,16 @@
 
     v-toolbar-items.expanded-menu
       .expanded-menu-items
-        .sadsya.humare-baare-mein
+        .members.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations सदस्य
-        .sandesh.humare-baare-mein
+        .sandesh.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations संदेश
-        .rajsabha-sankalp.humare-baare-mein
+        .rajsabha-sankalp.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations राजभाषा संकल्प
-        .vichar.humare-baare-mein
+        .vichar.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations अभिभाषण /विचार
 
@@ -28,13 +28,13 @@
 
     v-toolbar-items.expanded-menu2
       .expanded-menu-items2
-        .hindi-karyakalap.humare-baare-mein
+        .hindi-karyakalap.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी कार्यशाला
-        .hindi-karyalaya-adesh.humare-baare-mein
+        .hindi-karyalaya-adesh.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी कार्यालय आदेश
-        .hindi-divas-karyakram.humare-baare-mein
+        .hindi-divas-karyakram.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
 
@@ -42,13 +42,13 @@
 
     v-toolbar-items.expanded-menu3
       .expanded-menu-items3
-        .hindi-leyka.humare-baare-mein
+        .hindi-leyka.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी लेखा
-        .hindi-shabdavali.humare-baare-mein
+        .hindi-shabdavali.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी  शब्दावली
-        .varshik-patrika.humare-baare-mein
+        .varshik-patrika.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations वार्षिक पत्रिका
 
@@ -57,7 +57,7 @@
 
     v-toolbar-items.expanded-menu5
       .expanded-menu-items5
-        .span-items.humare-baare-mein.textDecorations
+        .span-items.floatingNavFlex.textDecorations
           span notEmailAddress@gmail.com
 
           span dontKnowEmailAddress@gmail.com
@@ -74,7 +74,7 @@
   font-size: 18px !important;
   font-weight: 500 !important;
 }
-.humare-baare-mein {
+.floatingNavFlex {
   display: flex;
   align-items: center;
   justify-content: space-around;
