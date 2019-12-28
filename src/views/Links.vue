@@ -59,5 +59,8 @@ export default {
   a:link {
     text-decoration: none;
   }
+  a {
+    outline: none;
+  }
 }
 </style>
