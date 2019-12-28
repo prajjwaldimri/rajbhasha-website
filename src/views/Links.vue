@@ -5,27 +5,27 @@
       v-container
         .links-text
           v-row
-            a(href="href=https://rajbhasha.nic.in/hi/hindi-vocabulary")
+            a(href="href=https://rajbhasha.nic.in/hi/hindi-vocabulary" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
               span.text-yellow hindi shabadkosh
           v-row
-            a(href="https://mantra-rajbhasha.rb-aai.in/")
+            a(href="https://mantra-rajbhasha.rb-aai.in/" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
               span.text-yellow hindi anuvad ki link
           v-row 
-            a(href="https://www.microsoft.com/en-in/bhashaindia/downloads.aspx")
+            a(href="https://www.microsoft.com/en-in/bhashaindia/downloads.aspx" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
               span.text-yellow microsoft indic input tool
           v-row 
-            a(href="http://e-mahashabdkosh.rb-aai.in/")
+            a(href="http://e-mahashabdkosh.rb-aai.in/" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
               span.text-yellow  e-mahashabadkosh ki link
           v-row
-            a(href="http://www.nitgoa.ac.in/")
+            a(href="http://www.nitgoa.ac.in/" target="_blank")
               v-icon(color = "#feee77") mdi-pdf-box
               span.text-yellow sansthan ki rajbhasha prakoshtha ki timahi report
           v-row 
-            a(href="https://rajbhasha.nic.in/")
+            a(href="https://rajbhasha.nic.in/" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
               span.text-yellow bharat sarkar grih mantralaya ki rajbhasha vibhag ki website  
     FloatingNav

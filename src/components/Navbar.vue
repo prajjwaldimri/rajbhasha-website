@@ -6,7 +6,7 @@
           v-breadcrumbs-item(:href="props.item.href" :class="[props.item.disabled && 'disabled', 'not-disabled']")
             | {{ props.item.text.toUpperCase() }}
       v-toolbar-title
-        a.logo(href="http://www.nitgoa.ac.in/")
+        a.logo(href="http://www.nitgoa.ac.in/" target="_blank")
           v-img(src="@/assets/nitlogo.png" height="24" width="24" )
           span राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
 </template>
