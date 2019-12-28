@@ -1,11 +1,11 @@
 <template lang="pug">
-  v-toolbar(bottom).floatingNav 
+  v-toolbar(bottom).floatingNav
     v-toolbar-items.floatingNavItems
-      v-btn(text).nav-1.textDecorations  हमारे बारे में 
-      v-btn(text).nav-2.textDecorations कार्यकलाप 
-      v-btn(text).nav-3.textDecorations संसाधन 
-      v-btn(text).textDecorations आवश्यक लिंक्स 
-      v-btn(text).nav-5.textDecorations संपर्क करे 
+      v-btn(text).nav-1.textDecorations  हमारे बारे में
+      v-btn(text).nav-2.textDecorations कार्यकलाप
+      v-btn(text).nav-3.textDecorations संसाधन
+      v-btn(text).textDecorations आवश्यक लिंक्स
+      v-btn(text).nav-5.textDecorations संपर्क करे
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -13,7 +13,7 @@
       .expanded-menu-items
         .sadsya.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
-          v-btn(text).textDecorations सदस्य 
+          v-btn(text).textDecorations सदस्य
         .sandesh.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
           v-btn(text).textDecorations संदेश
@@ -22,7 +22,7 @@
           v-btn(text).textDecorations राजभाषा संकल्प
         .vichar.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
-          v-btn(text).textDecorations अभिभाषण /विचार 
+          v-btn(text).textDecorations अभिभाषण /विचार
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -30,7 +30,7 @@
       .expanded-menu-items2
         .hindi-karyakalap.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
-          v-btn(text).textDecorations हिंदी कार्यशाला  
+          v-btn(text).textDecorations हिंदी कार्यशाला
         .hindi-karyalaya-adesh.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
           v-btn(text).textDecorations हिंदी कार्यालय आदेश
@@ -51,7 +51,7 @@
         .varshik-patrika.humare-baare-mein
           v-img(src="@/assets/gandhi.jpg" height="24" width="24")
           v-btn(text).textDecorations वार्षिक पत्रिका
-          
+
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -59,7 +59,7 @@
       .expanded-menu-items5
         .span-items.humare-baare-mein.textDecorations
           span notEmailAddress@gmail.com
-          
+
           span dontKnowEmailAddress@gmail.com
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -100,15 +100,16 @@
   &.active {
     z-index: 2;
     opacity: 100%;
-    transform: translateY(-80%) translateX(-1rem);
+    // transform: translateY(-80%) translateX(-1rem);
+    visibility: visible;
   }
-
+  visibility: hidden;
   opacity: 0;
   height: 200%;
   width: 100%;
   position: absolute;
   background: #424242;
-  transform: translateY(80%) translateX(-1rem);
+  transform: translateY(-80%) translateX(-1rem);
   transition: all 400ms;
 }
 
@@ -116,9 +117,9 @@
 .expanded-menu-items2,
 .expanded-menu-items3,
 .expanded-menu-items5 {
+  z-index: 4;
   display: flex;
-  flex: wrap;
-  flex: 1 1 0;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
 }
@@ -142,7 +143,7 @@ export default {
       menu.classList.add("active");
     });
 
-    menu.addEventListener("mouseout", () => {
+    menu.addEventListener("mouseleave", () => {
       menu.classList.remove("active");
     });
 
@@ -155,7 +156,7 @@ export default {
       menu2.classList.add("active");
     });
 
-    menu2.addEventListener("mouseout", () => {
+    menu2.addEventListener("mouseleave", () => {
       menu2.classList.remove("active");
     });
 
@@ -168,7 +169,7 @@ export default {
       menu3.classList.add("active");
     });
 
-    menu3.addEventListener("mouseout", () => {
+    menu3.addEventListener("mouseleave", () => {
       menu3.classList.remove("active");
     });
 
@@ -181,7 +182,7 @@ export default {
       menu5.classList.add("active");
     });
 
-    menu5.addEventListener("mouseout", () => {
+    menu5.addEventListener("mouseleave", () => {
       menu5.classList.remove("active");
     });
 
