@@ -159,11 +159,23 @@ export default {
       menu.classList.add("active");
     });
 
+    floatingNavItem.addEventListener("mouseleave", activeRemover);
+
+    menu.addEventListener("mouseover", () => {
+      menu.classList.add("active");
+    });
+
     menu.addEventListener("mouseleave", activeRemover);
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
     floatingNavItem2.addEventListener("mouseover", () => {
+      menu2.classList.add("active");
+    });
+
+    floatingNavItem2.addEventListener("mouseleave", activeRemover);
+
+    menu2.addEventListener("mouseover", () => {
       menu2.classList.add("active");
     });
 
@@ -175,11 +187,23 @@ export default {
       menu3.classList.add("active");
     });
 
+    floatingNavItem3.addEventListener("mouseleave", activeRemover);
+
+    menu3.addEventListener("mouseover", () => {
+      menu3.classList.add("active");
+    });
+
     menu3.addEventListener("mouseleave", activeRemover);
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
     floatingNavItem5.addEventListener("mouseover", () => {
+      menu5.classList.add("active");
+    });
+
+    floatingNavItem5.addEventListener("mouseleave", activeRemover);
+
+    menu5.addEventListener("mouseover", () => {
       menu5.classList.add("active");
     });
 
