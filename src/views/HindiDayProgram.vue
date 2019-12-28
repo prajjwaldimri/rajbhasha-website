@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    Navbar(pageName="Hindi Day Program")
+    Navbar(:breadcrumbs="breadcrumbs")
     v-content
       v-container(fluid)
         v-simple-table(:dense='dense' :fixed-header='fixedHeader' )
@@ -66,6 +66,18 @@ export default {
         date: "33 / 12 / 2019",
         subject: "Are you even there? I miss the way you felt to breathe",
         office_order: "Download"
+      }
+    ],
+    breadcrumbs: [
+      {
+        text: "Home",
+        disabled: false,
+        href: "/"
+      },
+      {
+        text: "Hindi Day Program",
+        disabled: true,
+        href: "/hindidayprogram"
       }
     ]
   })
