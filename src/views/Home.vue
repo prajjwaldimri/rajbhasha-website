@@ -1,6 +1,6 @@
 <template lang="pug">
   .home
-    Navbar
+    Navbar(isFlat="true")
     v-content
       .home-content
         .left

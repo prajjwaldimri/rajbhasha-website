@@ -11,7 +11,7 @@
           v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
 
         .team-members
-          span.display-2.text-yellow सदस्य
+          span.display-3.text-yellow सदस्य
 
     FloatingNav
 </template>
@@ -59,6 +59,6 @@ export default {
 }
 
 .team-members {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 </style>

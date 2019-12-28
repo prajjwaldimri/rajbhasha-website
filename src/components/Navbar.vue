@@ -1,13 +1,17 @@
 <template lang="pug">
-  v-toolbar(flat color="transparent")
-    v-toolbar-title 
+  v-toolbar(:flat="isFlat" color="transparent")
+    v-toolbar-title
       a.logo(href="http://www.nitgoa.ac.in/")
-        v-img(src="@/assets/nitlogo.png" height="24" width="24" )   
+        v-img(src="@/assets/nitlogo.png" height="24" width="24" )
         span राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    isFlat: Boolean
+  }
+};
 </script>
 
 <style lang="scss">
@@ -23,4 +27,4 @@ export default {};
     text-decoration: none;
   }
 }
-</style> 
+</style>
