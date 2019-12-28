@@ -10,8 +10,19 @@
             h2.headline - महात्मा गांधी
           v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
 
-        .team-members
-          span.display-4.text-yellow सदस्य
+        .team-member
+          span.display-4.text-yellow.font-weight-medium सदस्य
+          .team-member-profiles
+            .team-member-profile(v-for="item in items" :key="item.id")
+              v-avatar(size="128")
+                v-img(src="@/assets/headshot.jpg" aspect-ratio="0.9")
+              .team-member-profile-info
+                span.username.font-weight-light User Name
+                span.department.font-weight-medium.pt-1 Department Name
+                v-row(justify="space-around").pt-2
+                  v-icon.mr-2 mdi-facebook-box
+                  v-icon.mr-2 mdi-phone
+                  v-icon.mr-2 mdi-whatsapp
 
     FloatingNav
 </template>
@@ -25,6 +36,11 @@ export default {
   components: {
     Navbar,
     FloatingNav
+  },
+  data() {
+    return {
+      items: [1, 2, 3, 4, 5]
+    };
   }
 };
 </script>
@@ -58,7 +74,42 @@ export default {
   }
 }
 
-.team-members {
-  padding-top: 2rem;
+.team-member {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .display-4 {
+    text-align: center;
+  }
+
+  &-profiles {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 3rem;
+  }
+
+  &-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-info {
+      display: flex;
+      padding-top: 0.5rem;
+      flex-direction: column;
+      align-items: center;
+      .username {
+        font-size: 1.6rem;
+      }
+      .department {
+        font-size: 1.2rem;
+        margin-top: -0.3rem;
+      }
+    }
+  }
 }
 </style>
