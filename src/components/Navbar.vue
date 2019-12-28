@@ -4,12 +4,15 @@
       a.logo(href="http://www.nitgoa.ac.in/")
         v-img(src="@/assets/nitlogo.png" height="24" width="24" )
         span राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
+    v-toolbar-items
+      v-btn(text) {{pageName}}
 </template>
 
 <script>
 export default {
   props: {
-    isFlat: Boolean
+    isFlat: Boolean,
+    pageName: String
   }
 };
 </script>

@@ -1,18 +1,19 @@
 <template lang="pug">
   div
-    Navbar
-      v-content      
+    Navbar(pageName="Workshop")
+    v-content
+      v-container(fluid)
         v-simple-table(:dense='dense' :fixed-header='fixedHeader' )
           template(v-slot:default='')
             thead
               tr
                 th.text-left Date
-                th.text-left Subject                
+                th.text-left Subject
             tbody
               tr(v-for='item in information' :key='item.name')
                 td {{ item.date }}
                 td {{ item.subject }}
-    FloatingNav            
+    FloatingNav
 </template>
 
 <script>
