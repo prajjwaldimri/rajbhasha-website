@@ -45,9 +45,6 @@
         .hindi-writing.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी लेखा
-        .hindi-vocab.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations हिंदी  शब्दावली
         .yearly-magazine.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations वार्षिक पत्रिका
