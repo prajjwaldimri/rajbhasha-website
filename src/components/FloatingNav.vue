@@ -14,13 +14,13 @@
         .members.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations सदस्य
-        .sandesh.floatingNavFlex
+        .message.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations संदेश
-        .rajsabha-sankalp.floatingNavFlex
+        .lang-resolution.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations राजभाषा संकल्प
-        .vichar.floatingNavFlex
+        .thoughts.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations अभिभाषण /विचार
 
@@ -28,13 +28,13 @@
 
     v-toolbar-items.expanded-menu2
       .expanded-menu-items2
-        .hindi-karyakalap.floatingNavFlex
+        .workshop.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी कार्यशाला
-        .hindi-karyalaya-adesh.floatingNavFlex
+        .office-order.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी कार्यालय आदेश
-        .hindi-divas-karyakram.floatingNavFlex
+        .hindi-day-programme.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
 
@@ -42,13 +42,13 @@
 
     v-toolbar-items.expanded-menu3
       .expanded-menu-items3
-        .hindi-leyka.floatingNavFlex
+        .hindi-writing.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी लेखा
-        .hindi-shabdavali.floatingNavFlex
+        .hindi-vocab.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations हिंदी  शब्दावली
-        .varshik-patrika.floatingNavFlex
+        .yearly-magazine.floatingNavFlex
           v-img(src="@/assets/gandhi.jpg" height="70" width="140")
           v-btn(text).textDecorations वार्षिक पत्रिका
 
