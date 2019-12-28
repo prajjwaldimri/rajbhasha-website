@@ -5,7 +5,7 @@
     v-content
       v-container
         .gandhi-message-section
-          .text.text-yellow
+          .about-text.text-yellow
             span.display-2 मैं हिन्दी के जरिए प्रांतीय भाषाओं को दबाना नहीं चाहता किन्तु उनके साथ हिन्दी को भी मिला देना चाहता हूँ।
             h2.headline - महात्मा गांधी
           v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
@@ -39,7 +39,7 @@ export default {
   align-items: center;
   height: 75vh;
 
-  .text {
+  .about-text {
     display: flex;
     flex-direction: column;
     span {
