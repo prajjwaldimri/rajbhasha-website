@@ -1,21 +1,33 @@
 <template lang="pug">
   .imp-link
-    Navbar
+    Navbar(pageName="Important Links")
     v-content
       v-container
         .links-text
-          a(href="http://www.nitgoa.ac.in/")
-            span.text-yellow sansthan ki rajbhasha prakoshtha ki timahi report
-          a(href="href=https://rajbhasha.nic.in/hi/hindi-vocabulary")
-            span.text-yellow hindi shabadkosh
-          a(href="https://mantra-rajbhasha.rb-aai.in/")
-            span.text-yellow hindi anuvad ki link
-          a(href="http://e-mahashabdkosh.rb-aai.in/")
-            span.text-yellow  e-mahashabadkosh ki link
-          a(href="https://www.microsoft.com/en-in/bhashaindia/downloads.aspx")
-            span.text-yellow microsoft indic input tool
-          a(href="https://rajbhasha.nic.in/")
-            span.text-yellow bharat sarkar grih mantralaya ki rajbhasha vibhag ki website  
+          v-row
+            a(href="href=https://rajbhasha.nic.in/hi/hindi-vocabulary")
+              v-icon(color = "#feee77") mdi-open-in-new
+              span.text-yellow hindi shabadkosh
+          v-row
+            a(href="https://mantra-rajbhasha.rb-aai.in/")
+              v-icon(color = "#feee77") mdi-open-in-new
+              span.text-yellow hindi anuvad ki link
+          v-row 
+            a(href="https://www.microsoft.com/en-in/bhashaindia/downloads.aspx")
+              v-icon(color = "#feee77") mdi-open-in-new
+              span.text-yellow microsoft indic input tool
+          v-row 
+            a(href="http://e-mahashabdkosh.rb-aai.in/")
+              v-icon(color = "#feee77") mdi-open-in-new
+              span.text-yellow  e-mahashabadkosh ki link
+          v-row
+            a(href="http://www.nitgoa.ac.in/")
+              v-icon(color = "#feee77") mdi-pdf-box
+              span.text-yellow sansthan ki rajbhasha prakoshtha ki timahi report
+          v-row 
+            a(href="https://rajbhasha.nic.in/")
+              v-icon(color = "#feee77") mdi-open-in-new
+              span.text-yellow bharat sarkar grih mantralaya ki rajbhasha vibhag ki website  
     FloatingNav
 </template>
 <script>
@@ -35,20 +47,16 @@ export default {
 }
 .links-text {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
-  justify-items: center;
-  grid-row-gap: 1rem;
   span {
-    line-break: loose;
     word-break: break-word;
-    word-break: break-all;
     font-family: "Poppins", sans-serif !important;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 4rem;
+    padding-left: 0.5rem;
   }
-  &:link {
+  a:link {
     text-decoration: none;
   }
 }
