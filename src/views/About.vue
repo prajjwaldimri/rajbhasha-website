@@ -42,12 +42,12 @@ export default {
       items: [1, 2, 3, 4, 5],
       breadcrumbs: [
         {
-          text: "Home",
+          text: "होम",
           disabled: false,
           href: "/"
         },
         {
-          text: "About",
+          text: "हमारे बारे में",
           disabled: true,
           href: "/about"
         }

@@ -70,12 +70,12 @@ export default {
     ],
     breadcrumbs: [
       {
-        text: "Home",
+        text: "होम",
         disabled: false,
         href: "/"
       },
       {
-        text: "Office Order",
+        text: "कार्यालय का आदेश",
         disabled: true,
         href: "/officeorder"
       }
