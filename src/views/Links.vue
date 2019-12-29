@@ -7,27 +7,27 @@
           v-row
             a(href="https://rajbhasha.nic.in/hi/hindi-vocabulary" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
-              span.text-yellow hindi shabadkosh
+              span.text-yellow हिंदी शब्दकोश
           v-row
             a(href="https://mantra-rajbhasha.rb-aai.in/" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
-              span.text-yellow hindi anuvad ki link
+              span.text-yellow हिंदी अनुवाद की लिंक
           v-row 
             a(href="https://www.microsoft.com/en-in/bhashaindia/downloads.aspx" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
-              span.text-yellow microsoft indic input tool
+              span.text-yellow मइक्रोसॉफ़्ट इंडिक इनपुट टूल
           v-row 
             a(href="http://e-mahashabdkosh.rb-aai.in/" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
-              span.text-yellow  e-mahashabadkosh ki link
+              span.text-yellow  इ-महाशब्दकोश की लिंक 
           v-row
             a(href="http://www.nitgoa.ac.in/" target="_blank")
               v-icon(color = "#feee77") mdi-pdf-box
-              span.text-yellow sansthan ki rajbhasha prakoshtha ki timahi report
+              span.text-yellow संस्थान की राजभाषा प्रकोष्ठ की त्रिमाही रिपोर्ट
           v-row 
             a(href="https://rajbhasha.nic.in/" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
-              span.text-yellow bharat sarkar grih mantralaya ki rajbhasha vibhag ki website  
+              span.text-yellow भारत सरकार गृह मत्रालय के राजभाषा विभाग की वेबसाइट
     FloatingNav
 </template>
 <script>
@@ -48,7 +48,7 @@ export default {
           href: "/"
         },
         {
-          text: "Important Links",
+          text: "आवस्यक लिंक",
           disabled: true,
           href: "/links"
         }
