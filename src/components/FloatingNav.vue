@@ -80,19 +80,45 @@
                 v-row
                   a(href = "https://prajjwal.me/")
                     v-icon mdi-web
-                    v-icon mdi-linkedin-box
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-telegram
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-github-face
               .creator-item
                 span Subarna Dhar
-                .creator-icon
-                  v-icon mdi-linkedin-box
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-linkedin-box
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-telegram
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-github-face
               .creator-item
                 span RV Kaundinya
-                .creator-icon
-                  v-icon mdi-linkedin-box
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-linkedin-box
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-telegram
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-github-face
               .creator-item
                 span Deep Patel
-                .creator-icon
-                  v-icon mdi-linkedin-box
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-linkedin-box
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-telegram
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-github-face
             span notEmailAddress@gmail.com
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
