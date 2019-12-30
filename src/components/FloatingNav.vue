@@ -6,7 +6,7 @@
         v-btn(text).nav-2.textDecorations कार्यकलाप +
         v-btn(text).nav-3.textDecorations संसाधन +
         router-link(to='/links' tag='v-btn')
-          v-btn(text).textDecorations.textDecorationsLink आवश्यक लिंक्स 
+          v-btn(text).textDecorations.textDecorationsLink आवश्यक लिंक्स
         v-btn(text).nav-5.textDecorations संपर्क करे +
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -17,7 +17,7 @@
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
               a(href="/about" target="_self")
-                v-btn(text).textDecorations.removeUnderline सदस्य            
+                v-btn(text).textDecorations.removeUnderline सदस्य
           .message.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
@@ -27,12 +27,12 @@
           .lang-resolution.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
-              a(href="/about" target="_self")              
+              a(href="/about" target="_self")
                 v-btn(text).textDecorations राजभाषा संकल्प
           .thoughts.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
-              a(href="/about" target="_self")              
+              a(href="/about" target="_self")
                 v-btn(text).textDecorations अभिभाषण /विचार
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -42,19 +42,19 @@
           .workshop.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140" )
             v-row
-              a(href="/workshop" target="_self")          
+              a(href="/workshop" target="_self")
                 v-btn(text).textDecorations हिंदी कार्यशाला
           .office-order.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
-              a(href="/officeOrder" target="_self")              
+              a(href="/officeOrder" target="_self")
                 v-btn(text).textDecorations हिंदी कार्यालय आदेश
           .hindi-day-programme.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
-              a(href="/hindiDayProgram" target="_self")              
-                v-btn(text).textDecorations हिंदी दिवस कार्यक्रम        
-          
+              a(href="/hindiDayProgram" target="_self")
+                v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
+
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -80,15 +80,15 @@
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    v-btn(fab bottom right fixed @click="sheet=true")
+    v-btn(fab bottom right fixed @click="sheet=true").d-lg-none
       v-icon(color="#feee77") mdi-menu
-    v-bottom-sheet(v-model="sheet")
+    v-bottom-sheet(v-model="sheet").d-lg-none
       v-list
         v-subheader Navigation
         v-list-item(v-for="tile in tiles" :key="tile.title" @click="sheet=false" :href="tile.href")
           v-list-item-content
             v-list-item-title {{tile.title}}
-  
+
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
 
