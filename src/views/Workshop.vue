@@ -75,7 +75,7 @@ export default {
         href: "/"
       },
       {
-        text: "कार्यशाला",
+        text: "हिंदी कार्यशाला",
         disabled: true,
         href: "/workshop"
       }

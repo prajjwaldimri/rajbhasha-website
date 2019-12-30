@@ -75,7 +75,7 @@ export default {
         href: "/"
       },
       {
-        text: "कार्यालय का आदेश",
+        text: "हिंदी कार्यालय आदेश",
         disabled: true,
         href: "/officeorder"
       }
