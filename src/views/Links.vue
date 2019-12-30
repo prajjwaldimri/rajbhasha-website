@@ -27,7 +27,7 @@
           v-row 
             a(href="https://rajbhasha.nic.in/" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
-              span.text-yellow भारत सरकार गृह मत्रालय के राजभाषा विभाग की वेबसाइट
+              span.text-yellow भारत सरकार गृह मंत्रालय के राजभाषा विभाग की वेबसाइट
     FloatingNav
 </template>
 <script>
@@ -48,7 +48,7 @@ export default {
           href: "/"
         },
         {
-          text: "आवस्यक लिंक",
+          text: "आवश्यक लिंक्स",
           disabled: true,
           href: "/links"
         }
