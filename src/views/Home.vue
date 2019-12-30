@@ -98,6 +98,7 @@ export default {
       color: #feee77;
       -webkit-text-stroke: -200px black;
       font-weight: 400;
+      line-height: 6rem;
       font-size: 8rem !important;
       font-family: "Kalam", sans-serif !important;
       padding: 3%;
