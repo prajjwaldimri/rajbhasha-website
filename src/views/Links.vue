@@ -48,7 +48,7 @@ export default {
           href: "/"
         },
         {
-          text: "आवश्यक लिंक",
+          text: "आवश्यक लिंक्स",
           disabled: true,
           href: "/links"
         }
