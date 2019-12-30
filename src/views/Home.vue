@@ -42,7 +42,7 @@ export default {
     ],
     breadcrumbs: [
       {
-        text: "Home",
+        text: "होम",
         disabled: true,
         href: "/"
       }
