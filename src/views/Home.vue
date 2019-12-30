@@ -4,8 +4,8 @@
     v-content
       .home-content
         .left
-          h2.display-4 राजभाषा
-          h2.display-4 प्रकोष्ठ
+          h2 राजभाषा
+          h2 प्रकोष्ठ
         .right
           VueperSlides(autoplay fade :arrows="false" :slideRatio="3/5").no-shadow
             VueperSlide(v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" :image="slide.image")
@@ -68,14 +68,30 @@ export default {
 .home-content {
   display: flex;
   align-items: center;
+  @media (max-width: 1264px) {
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+  }
   height: 75vh;
 
   .left {
     width: 40%;
+    @media (max-width: 1264px) {
+      width: 100%;
+      justify-content: center;
+    }
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     h2 {
+      @media (max-width: 1264px) {
+        font-size: 4rem !important;
+        padding: 0;
+        transform: none;
+        text-align: center;
+        line-height: 8rem;
+      }
       text-align: right;
       transform: translateX(10%);
       z-index: 2;
@@ -83,11 +99,15 @@ export default {
       -webkit-text-stroke: -200px black;
       font-weight: 400;
       font-size: 8rem !important;
+      font-family: "Kalam", sans-serif !important;
       padding: 3%;
     }
   }
 
   .right {
+    @media (max-width: 1264px) {
+      width: 100%;
+    }
     width: 60%;
   }
 }

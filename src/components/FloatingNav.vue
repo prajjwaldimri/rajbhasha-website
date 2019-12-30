@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-toolbar(bottom).floatingNav
+  v-toolbar(bottom).floatingNav.d-none.d-lg-block
     v-toolbar-items.floatingNavItems
       v-btn(text).nav-1.textDecorations  हमारे बारे में +
       v-btn(text).nav-2.textDecorations कार्यकलाप +

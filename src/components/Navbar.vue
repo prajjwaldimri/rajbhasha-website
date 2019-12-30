@@ -1,7 +1,7 @@
 <template lang="pug">
   v-toolbar(:flat="isFlat" color="transparent")
     .toolbar-content
-      v-breadcrumbs(:items="breadcrumbs" divider="/" large).pa-0
+      v-breadcrumbs(:items="breadcrumbs" divider="/" large).pa-0.d-none.d-lg-block
         template(v-slot:item="props")
           v-breadcrumbs-item(:href="props.item.href" :class="[props.item.disabled && 'disabled', 'not-disabled']")
             | {{ props.item.text.toUpperCase() }}
