@@ -73,9 +73,27 @@
       v-toolbar-items.expanded-menu5
         .expanded-menu-items5
           .span-items.floatingNavFlex.textDecorations
+            .creators
+              span Created by:
+              .creator-item
+                span Prajjwal Dimri
+                v-row
+                  a(href = "https://prajjwal.me/")
+                    v-icon mdi-web
+                    v-icon mdi-linkedin-box
+              .creator-item
+                span Subarna Dhar
+                .creator-icon
+                  v-icon mdi-linkedin-box
+              .creator-item
+                span RV Kaundinya
+                .creator-icon
+                  v-icon mdi-linkedin-box
+              .creator-item
+                span Deep Patel
+                .creator-icon
+                  v-icon mdi-linkedin-box
             span notEmailAddress@gmail.com
-
-            span dontKnowEmailAddress@gmail.com
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -170,6 +188,15 @@ a:link {
   span {
     justify-items: space-around;
   }
+}
+
+.creators {
+  display: flex;
+}
+.creator-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
 }
 
 .nav-mobile {
