@@ -71,7 +71,7 @@ export default {
   @media (max-width: 1264px) {
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 85vh;
   }
   height: 75vh;
 
@@ -90,7 +90,7 @@ export default {
         padding: 0;
         transform: none;
         text-align: center;
-        line-height: 8rem;
+        line-height: 5rem;
       }
       text-align: right;
       transform: translateX(10%);

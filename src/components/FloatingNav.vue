@@ -1,67 +1,75 @@
 <template lang="pug">
-  v-toolbar(bottom).floatingNav.d-none.d-lg-block
-    v-toolbar-items.floatingNavItems
-      v-btn(text).nav-1.textDecorations  हमारे बारे में +
-      v-btn(text).nav-2.textDecorations कार्यकलाप +
-      v-btn(text).nav-3.textDecorations संसाधन +
-      v-btn(text).textDecorations आवश्यक लिंक्स 
-      v-btn(text).nav-5.textDecorations संपर्क करे +
+  aside
+    v-toolbar(bottom).floatingNav.d-none.d-lg-block
+      v-toolbar-items.floatingNavItems
+        v-btn(text).nav-1.textDecorations  हमारे बारे में +
+        v-btn(text).nav-2.textDecorations कार्यकलाप +
+        v-btn(text).nav-3.textDecorations संसाधन +
+        v-btn(text).textDecorations आवश्यक लिंक्स 
+        v-btn(text).nav-5.textDecorations संपर्क करे +
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////
+      ///////////////////////////////////////////////////////////////////////////////////////////////
 
-    v-toolbar-items.expanded-menu
-      .expanded-menu-items
-        .members.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations सदस्य
-        .message.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations संदेश
-        .lang-resolution.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations राजभाषा संकल्प
-        .thoughts.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations अभिभाषण /विचार
+      v-toolbar-items.expanded-menu
+        .expanded-menu-items
+          .members.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations सदस्य
+          .message.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations संदेश
+          .lang-resolution.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations राजभाषा संकल्प
+          .thoughts.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations अभिभाषण /विचार
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////
+      ///////////////////////////////////////////////////////////////////////////////////////////////
 
-    v-toolbar-items.expanded-menu2
-      .expanded-menu-items2
-        .workshop.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations हिंदी कार्यशाला
-        .office-order.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations हिंदी कार्यालय आदेश
-        .hindi-day-programme.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
+      v-toolbar-items.expanded-menu2
+        .expanded-menu-items2
+          .workshop.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations हिंदी कार्यशाला
+          .office-order.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations हिंदी कार्यालय आदेश
+          .hindi-day-programme.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////
+      ///////////////////////////////////////////////////////////////////////////////////////////////
 
-    v-toolbar-items.expanded-menu3
-      .expanded-menu-items3
-        .hindi-writing.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations हिंदी लेखा
-        .yearly-magazine.floatingNavFlex
-          v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-          v-btn(text).textDecorations वार्षिक पत्रिका
-
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////
-
-    v-toolbar-items.expanded-menu5
-      .expanded-menu-items5
-        .span-items.floatingNavFlex.textDecorations
-          span notEmailAddress@gmail.com
-
-          span dontKnowEmailAddress@gmail.com
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////
+      v-toolbar-items.expanded-menu3
+        .expanded-menu-items3
+          .hindi-writing.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations हिंदी लेखा
+          .yearly-magazine.floatingNavFlex
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-btn(text).textDecorations वार्षिक पत्रिका
 
 
+      ///////////////////////////////////////////////////////////////////////////////////////////////
+
+      v-toolbar-items.expanded-menu5
+        .expanded-menu-items5
+          .span-items.floatingNavFlex.textDecorations
+            span notEmailAddress@gmail.com
+
+            span dontKnowEmailAddress@gmail.com
+
+      ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    v-btn(fab bottom right fixed @click="sheet=true")
+      v-icon(color="#feee77") mdi-menu
+    v-bottom-sheet(v-model="sheet")
+      v-list
+        v-subheader Navigation
+        v-list-item(v-for="tile in tiles" :key="tile.title" @click="sheet=false" :href="tile.href")
+          v-list-item-content
+            v-list-item-title {{tile.title}}
 
 </template>
 
@@ -128,10 +136,39 @@
     justify-items: space-around;
   }
 }
+
+.nav-mobile {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
 </style>
 
 <script>
 export default {
+  data() {
+    return {
+      sheet: false,
+      tiles: [
+        {
+          title: "Home",
+          href: "/"
+        },
+        {
+          title: "About",
+          href: "/"
+        },
+        {
+          title: "About",
+          href: "/"
+        },
+        {
+          title: "About",
+          href: "/"
+        }
+      ]
+    };
+  },
   mounted() {
     const menu = document.getElementsByClassName("expanded-menu")[0];
     const floatingNavItem = document.getElementsByClassName("nav-1")[0];
