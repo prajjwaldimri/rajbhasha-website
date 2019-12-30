@@ -5,7 +5,8 @@
         v-btn(text).nav-1.textDecorations  हमारे बारे में +
         v-btn(text).nav-2.textDecorations कार्यकलाप +
         v-btn(text).nav-3.textDecorations संसाधन +
-        v-btn(text).textDecorations आवश्यक लिंक्स 
+        router-link(to='/links' tag='v-btn')
+          v-btn(text).textDecorations.textDecorationsLink आवश्यक लिंक्स 
         v-btn(text).nav-5.textDecorations संपर्क करे +
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -14,30 +15,46 @@
         .expanded-menu-items
           .members.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations सदस्य
+            v-row
+              a(href="/about" target="_self")
+                v-btn(text).textDecorations.removeUnderline सदस्य            
           .message.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations संदेश
+            v-row
+              a(href="/about" target="_self")
+                v-btn(text).textDecorations संदेश
+
           .lang-resolution.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations राजभाषा संकल्प
+            v-row
+              a(href="/about" target="_self")              
+                v-btn(text).textDecorations राजभाषा संकल्प
           .thoughts.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations अभिभाषण /विचार
+            v-row
+              a(href="/about" target="_self")              
+                v-btn(text).textDecorations अभिभाषण /विचार
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
       v-toolbar-items.expanded-menu2
         .expanded-menu-items2
           .workshop.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations हिंदी कार्यशाला
+            v-img(src="@/assets/gandhi.jpg" height="70" width="140" )
+            v-row
+              a(href="/workshop" target="_self")          
+                v-btn(text).textDecorations हिंदी कार्यशाला
           .office-order.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations हिंदी कार्यालय आदेश
+            v-row
+              a(href="/officeOrder" target="_self")              
+                v-btn(text).textDecorations हिंदी कार्यालय आदेश
           .hindi-day-programme.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
+            v-row
+              a(href="/hindiDayProgram" target="_self")              
+                v-btn(text).textDecorations हिंदी दिवस कार्यक्रम        
+          
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -62,6 +79,7 @@
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
+
     v-btn(fab bottom right fixed @click="sheet=true")
       v-icon(color="#feee77") mdi-menu
     v-bottom-sheet(v-model="sheet")
@@ -70,6 +88,11 @@
         v-list-item(v-for="tile in tiles" :key="tile.title" @click="sheet=false" :href="tile.href")
           v-list-item-content
             v-list-item-title {{tile.title}}
+  
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 </template>
 
@@ -78,7 +101,17 @@
   letter-spacing: initial !important;
   font-size: 18px !important;
   font-weight: 500 !important;
+  height: 100% !important;
+  text-decoration: none !important;
 }
+
+.textDecorationsLinks {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 .floatingNavFlex {
   display: flex;
   align-items: center;
@@ -96,7 +129,9 @@
   width: 100%;
   justify-content: space-around;
 }
-
+a:link {
+  text-decoration: none;
+}
 .expanded-menu,
 .expanded-menu2,
 .expanded-menu3,
