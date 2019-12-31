@@ -77,49 +77,42 @@
               span Created by:
               .creator-item
                 span Prajjwal Dimri
-                v-row
+                v-row.creator-icon
                   a(href = "https://prajjwal.me/")
                     v-icon mdi-web
-                v-row
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://t.me/prajjwaldimri").pl-2
                     v-icon mdi-telegram
-                v-row
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://prajjwal.me/").pl-2
                     v-icon mdi-github-face
               .creator-item
                 span Subarna Dhar
-                v-row
+                v-row.creator-icon
                   a(href = "https://prajjwal.me/")
                     v-icon mdi-linkedin-box
-                v-row
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://t.me/subarnadhar").pl-2
                     v-icon mdi-telegram
-                v-row
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://prajjwal.me/").pl-2
                     v-icon mdi-github-face
               .creator-item
                 span RV Kaundinya
-                v-row
+                v-row.creator-icon
                   a(href = "https://prajjwal.me/")
                     v-icon mdi-linkedin-box
-                v-row
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://t.me/kaundinya77").pl-2
                     v-icon mdi-telegram
-                v-row
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://prajjwal.me/").pl-2
                     v-icon mdi-github-face
               .creator-item
                 span Deep Patel
-                v-row
-                  a(href = "https://prajjwal.me/")
-                    v-icon mdi-linkedin-box
-                v-row
-                  a(href = "https://prajjwal.me/")
+                v-row.creator-icon
+                  a(href = "https://www.instagram.com/deep2.0_")
+                    v-icon mdi-instagram
+                  a(href = "https://t.me/deep2_0").pl-2
                     v-icon mdi-telegram
-                v-row
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://prajjwal.me/").pl-2
                     v-icon mdi-github-face
-            span notEmailAddress@gmail.com
+            .contactus
+              span notEmailAddress@gmail.com
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -218,13 +211,20 @@ a:link {
 
 .creators {
   display: flex;
+  width: 60%;
+  justify-content: space-around;
 }
 .creator-item {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
 }
-
+.creator-icon {
+  display: flex;
+  justify-content: center;
+}
+.contactus {
+  display: flex;
+}
 .nav-mobile {
   position: fixed;
   bottom: 1rem;
