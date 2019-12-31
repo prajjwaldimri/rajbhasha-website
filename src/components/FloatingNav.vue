@@ -113,6 +113,7 @@
                     v-icon mdi-github-face
             .contactus
               span notEmailAddress@gmail.com
+              v-icon mdi-facebook-box
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
