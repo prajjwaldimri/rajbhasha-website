@@ -1,6 +1,6 @@
 <template lang="pug">
   .home
-    Navbar(isFlat="true" :breadcrumbs="breadcrumbs")
+    Navbar(isFlat="true" color="transparent" :breadcrumbs="breadcrumbs")
     v-content
       .home-content
         .left

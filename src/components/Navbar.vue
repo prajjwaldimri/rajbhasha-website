@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-toolbar(:flat="isFlat" color="transparent")
+  v-toolbar(:flat="isFlat" :color="color").top-toolbar
     .toolbar-content
       v-breadcrumbs(:items="breadcrumbs" divider="/" large).pa-0.d-none.d-lg-block
         template(v-slot:item="props")
@@ -15,6 +15,7 @@
 export default {
   props: {
     isFlat: { type: Boolean, default: false },
+    color: { type: String, default: "dark" },
     breadcrumbs: {
       type: Array,
       required: true
@@ -24,6 +25,12 @@ export default {
 </script>
 
 <style lang="scss">
+.top-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+}
+
 .toolbar-content {
   display: flex;
   flex-grow: 1;
