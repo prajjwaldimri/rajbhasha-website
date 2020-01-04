@@ -131,9 +131,14 @@
     v-bottom-sheet(v-model="sheet").d-lg-none
       v-list
         v-subheader Navigation
-        v-list-item(v-for="tile in tiles" :key="tile.title" @click="sheet=false" :href="tile.href")
-          v-list-item-content
-            v-list-item-title {{tile.title}}
+        v-list-group(v-for="item in items" :key="item.title" v-model="item.active" no-action)
+          template(v-slot:activator)
+            v-list-item-content
+              v-list-item-title(v-text="item.title")
+
+          v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to")
+            v-list-item-content
+              v-list-item-title(v-text="subItem.title")
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -255,22 +260,57 @@ export default {
   data() {
     return {
       sheet: false,
-      tiles: [
+      items: [
         {
-          title: "Home",
-          href: "/"
+          title: "हमारे बारे में",
+          items: [
+            {
+              title: "सदस्य",
+              to: "/members"
+            },
+            {
+              title: "संदेश",
+              to: "/message"
+            },
+            {
+              title: "राजभाषा संकल्प",
+              to: "/resolution"
+            },
+            {
+              title: "अभिभाषण/विचार",
+              to: "/thoughts"
+            }
+          ]
         },
         {
-          title: "About",
-          href: "/"
+          title: "कार्यकलाप",
+          items: [
+            {
+              title: "हिन्दी कार्यशाला",
+              to: "/workshop"
+            },
+            {
+              title: "हिन्दी कार्यशाला आदेश",
+              to: "/officeOrder"
+            },
+            {
+              title: "हिन्दी दिवस कार्यक्रम",
+              to: "/hindiDayProgram"
+            }
+          ]
         },
         {
-          title: "About",
-          href: "/"
-        },
-        {
-          title: "About",
-          href: "/"
+          title: "संसाधन",
+          items: [
+            {
+              title: "हिन्दी लेखा",
+              to: "/"
+            },
+            {
+              title: "वार्षिक पत्रिका",
+              to: "/"
+            }
+          ]
         }
       ]
     };
