@@ -16,23 +16,23 @@
           .members.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
-              a(href="/about" target="_self")
+              a(href="/members" target="_self")
                 v-btn(text).textDecorations.removeUnderline सदस्य
           .message.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
-              a(href="/about" target="_self")
+              a(href="/message" target="_self")
                 v-btn(text).textDecorations संदेश
 
           .lang-resolution.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
-              a(href="/about" target="_self")
+              a(href="/resolution" target="_self")
                 v-btn(text).textDecorations राजभाषा संकल्प
           .thoughts.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row
-              a(href="/about" target="_self")
+              a(href="/thoughts" target="_self")
                 v-btn(text).textDecorations अभिभाषण /विचार
 
       ///////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,7 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
+import Message from "../views/Message.vue";
+import Members from "../views/Members.vue";
+import Resolution from "../views/Resolution.vue";
+import Thoughts from "../views/Thoughts.vue";
 import Links from "../views/Links.vue";
 import Workshop from "../views/Workshop.vue";
 import HindiDayProgram from "../views/HindiDayProgram.vue";
@@ -16,9 +19,24 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "about",
-    component: About
+    path: "/message",
+    name: "message",
+    component: Message
+  },
+  {
+    path: "/members",
+    name: "members",
+    component: Members
+  },
+  {
+    path: "/resolution",
+    name: "resolution",
+    component: Resolution
+  },
+  {
+    path: "/thoughts",
+    name: "thoughts",
+    component: Thoughts
   },
   {
     path: "/links",
