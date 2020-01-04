@@ -107,32 +107,8 @@ export default {
   padding-bottom: 128px;
 }
 
-.gandhi-message-section {
-  display: flex;
-  align-items: center;
-  height: 75vh;
-
-  .about-text {
-    display: flex;
-    flex-direction: column;
-    span {
-      &.display-2 {
-        font-family: "Poppins", sans-serif !important;
-        line-height: 4rem;
-      }
-    }
-    h2 {
-      padding-top: 1rem;
-      &.headline {
-        font-family: "Poppins", sans-serif !important;
-      }
-    }
-    width: 70%;
-  }
-}
-
 .team-member {
-  padding-top: 7rem;
+  //padding-top: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
