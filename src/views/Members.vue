@@ -89,7 +89,7 @@ export default {
           href: "/"
         },
         {
-          text: "Sadashya",
+          text: "सदस्य",
           disabled: true,
           href: "/members"
         }
