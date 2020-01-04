@@ -112,15 +112,15 @@
                   a(href = "https://github.com/Deep-patell" target="_blank").pl-2
                     v-icon mdi-github-face
             .contactus
-              span Rajbhasha Prakoshtha
-              span National Institute of Technology Goa
-              span Farmagudi, Ponda, Goa 403401
-            v-row.contactus-icon
-              a(href = "mailto:xyz@gmail.com" target="_blank").pl-3
+              h5 Rajbhasha Prakoshtha
+              h5  National Institute of Technology Goa
+              h5 Farmagudi, Ponda, Goa 403401
+            .contactus-icon
+              a(href = "mailto:xyz@gmail.com" target="_blank")
                 v-icon mdi-email
-              a(href = "https://www.facebook.com/nitgoa/" target="_blank").pl-3
+              a(href = "https://www.facebook.com/nitgoa/" target="_blank")
                 v-icon mdi-facebook-box
-              a(href = "https://twitter.com/NITGoa_Official" target="_blank").pl-3
+              a(href = "https://twitter.com/NITGoa_Official" target="_blank")
                 v-icon mdi-twitter
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -234,12 +234,12 @@ a:link {
 }
 .contactus {
   display: flex;
-  flex-direction: column;
-  width: 35%;
+  flex-flow: column;
+  align-items: center;
 }
 .contactus-icon {
   display: flex;
-  width: 10%;
+  flex-flow: column;
 }
 .nav-mobile {
   position: fixed;
