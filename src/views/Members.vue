@@ -108,7 +108,7 @@ export default {
 }
 
 .team-member {
-  //padding-top: 7rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
