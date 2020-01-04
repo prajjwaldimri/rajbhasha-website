@@ -13,18 +13,15 @@
               tr(v-for='item in information' :key='item.name')
                 td {{ item.date }}
                 td {{ item.subject }}
-    FloatingNav
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import FloatingNav from "@/components/FloatingNav.vue";
 
 export default {
   name: "home",
   components: {
-    Navbar,
-    FloatingNav
+    Navbar
   },
 
   data: () => ({

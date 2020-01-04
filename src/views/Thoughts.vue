@@ -24,18 +24,15 @@
                   v-icon.mr-2 mdi-phone
                   v-icon.mr-2 mdi-whatsapp
 
-    FloatingNav
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import FloatingNav from "@/components/FloatingNav.vue";
 
 export default {
   name: "home",
   components: {
-    Navbar,
-    FloatingNav
+    Navbar
   },
   data() {
     return {

@@ -13,7 +13,9 @@ export default {
   components: {
     FloatingNav
   },
-  methods: {}
+  beforeRouteUpdate(to, from, next) {
+    console.log(to, from, next);
+  }
 };
 </script>
 

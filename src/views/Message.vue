@@ -10,18 +10,15 @@
             h2.headline - महात्मा गांधी
           v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
 
-    FloatingNav
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import FloatingNav from "@/components/FloatingNav.vue";
 
 export default {
   name: "home",
   components: {
-    Navbar,
-    FloatingNav
+    Navbar
   },
   data() {
     return {
