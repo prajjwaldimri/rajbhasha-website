@@ -5,7 +5,7 @@
         v-btn(text).nav-1.textDecorations  हमारे बारे में +
         v-btn(text).nav-2.textDecorations कार्यकलाप +
         v-btn(text).nav-3.textDecorations संसाधन +
-        router-link(to='/links' tag='v-btn')
+        router-link(to='/links')
           v-btn(text).textDecorations.textDecorationsLink आवश्यक लिंक्स
         v-btn(text).nav-5.textDecorations संपर्क करे +
 
