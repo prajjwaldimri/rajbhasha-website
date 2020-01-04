@@ -161,7 +161,7 @@ export default {
 
     &-info {
       display: flex;
-      padding-top: 0.5rem;
+      //padding-top: 0.5rem;
       flex-direction: column;
       align-items: center;
       .username {
