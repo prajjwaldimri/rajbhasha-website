@@ -15,24 +15,24 @@
         .expanded-menu-items
           .members.floatingNavFlex
             v-img(src="@/assets/member3.jpg" height="70" width="140")
-            v-row
-              a(href="/members" target="_self")
+            v-row.pl-3
+              a(href="/members")
                 v-btn(text).textDecorations.removeUnderline सदस्य
           .message.floatingNavFlex
             v-img(src="@/assets/sandesh4.jpg" height="70" width="140")
-            v-row
-              a(href="/message" target="_self")
+            v-row.pl-3
+              a(href="/message")
                 v-btn(text).textDecorations संदेश
 
           .lang-resolution.floatingNavFlex
             v-img(src="@/assets/oath.jpg" height="70" width="140")
-            v-row
-              a(href="/resolution" target="_self")
+            v-row.pl-3
+              a(href="/resolution")
                 v-btn(text).textDecorations राजभाषा संकल्प
           .thoughts.floatingNavFlex
             v-img(src="@/assets/vichar.jpg" height="70" width="140")
-            v-row
-              a(href="/thoughts" target="_self")
+            v-row.pl-3
+              a(href="/thoughts")
                 v-btn(text).textDecorations अभिभाषण /विचार
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -41,18 +41,18 @@
         .expanded-menu-items2
           .workshop.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140" )
-            v-row
-              a(href="/workshop" target="_self")
+            v-row.pl-3
+              a(href="/workshop")
                 v-btn(text).textDecorations हिंदी कार्यशाला
           .office-order.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-row
-              a(href="/officeOrder" target="_self")
+            v-row.pl-3
+              a(href="/officeOrder")
                 v-btn(text).textDecorations हिंदी कार्यालय आदेश
           .hindi-day-programme.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-row
-              a(href="/hindiDayProgram" target="_self")
+            v-row.pl-3
+              a(href="/hindiDayProgram")
                 v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
 
 
@@ -62,10 +62,10 @@
         .expanded-menu-items3
           .hindi-writing.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations हिंदी लेखा
+            v-btn(text).textDecorations.pl-3 हिंदी लेखा
           .yearly-magazine.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations वार्षिक पत्रिका
+            v-btn(text).textDecorations.pl-3 वार्षिक पत्रिका
 
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -113,7 +113,7 @@
                     v-icon mdi-github-face
             .contactus
               h5 Rajbhasha Prakoshtha
-              h5  National Institute of Technology Goa
+              h5 National Institute of Technology Goa
               h5 Farmagudi, Ponda, Goa 403401
             .contactus-icon
               a(href = "mailto:xyz@gmail.com" target="_blank")
