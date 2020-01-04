@@ -14,23 +14,23 @@
       v-toolbar-items.expanded-menu
         .expanded-menu-items
           .members.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-img(src="@/assets/member3.jpg" height="70" width="140")
             v-row
               a(href="/members" target="_self")
                 v-btn(text).textDecorations.removeUnderline सदस्य
           .message.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-img(src="@/assets/sandesh4.jpg" height="70" width="140")
             v-row
               a(href="/message" target="_self")
                 v-btn(text).textDecorations संदेश
 
           .lang-resolution.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-img(src="@/assets/oath.jpg" height="70" width="140")
             v-row
               a(href="/resolution" target="_self")
                 v-btn(text).textDecorations राजभाषा संकल्प
           .thoughts.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-img(src="@/assets/vichar.jpg" height="70" width="140")
             v-row
               a(href="/thoughts" target="_self")
                 v-btn(text).textDecorations अभिभाषण /विचार
