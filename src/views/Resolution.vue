@@ -1,28 +1,18 @@
 <template lang="pug">
-  .about
+  div
     Navbar(:breadcrumbs="breadcrumbs")
 
     v-content
       v-container
-        .gandhi-message-section
-          .about-text.text-yellow
-            span.display-2 मैं हिन्दी के जरिए प्रांतीय भाषाओं को दबाना नहीं चाहता किन्तु उनके साथ हिन्दी को भी मिला देना चाहता हूँ।
-            h2.headline - महात्मा गांधी
-          v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
-
-        .team-member
-          span.display-4.text-yellow.font-weight-medium सदस्य
-          .team-member-profiles
-            .team-member-profile(v-for="item in items" :key="item.id")
-              v-avatar(size="128")
-                v-img(:src="item.url" aspect-ratio="0.9")
-              .team-member-profile-info
-                span.username.font-weight-light {{item.name}}
-                span.department.font-weight-medium.pt-1 {{item.department}}
-                v-row(justify="space-around").pt-2
-                  v-icon.mr-2 mdi-facebook-box
-                  v-icon.mr-2 mdi-phone
-                  v-icon.mr-2 mdi-whatsapp
+        .d-flex.flex-column.pt-5.text-yellow
+          span.display-3(style="text-align: center; font-weight: 600") संकल्प
+          h2.poppins-font.pt-3(style="text-align: justify") “जब तक संविधान के अनुच्छेद 343 के अनुसार संघ की राजभाषा हिंदी रहेगी और उसके अनुच्छेद 351 के अनुसार हिंदी भाषा का प्रसार, वृद्धि करना और उसका विकास करना ताकि वह भारत की सामासिक संस्कृति के सब तत्वों की अभिव्यक्ति का माध्यम हो सके, संघ का कर्तव्य है:
+          h2.poppins-font.pt-3(style="text-align: justify") 1. यह सभा संकल्प करती है कि हिंदी के प्रसार एंव विकास की गति बढ़ाने के हेतु तथा संघ के विभिन्न राजकीय प्रयोजनों के लिए उत्तरोत्तर इसके प्रयोग हेतु भारत सरकार द्वारा एक अधिक गहन एवं व्यापक कार्यक्रम तैयार किया जाएगा और उसे कार्यान्वित किया जाएगा और किए जाने वाले उपायों एवं की जाने वाली प्रगति की विस्तृत वार्षिक मूल्यांकन रिपोर्ट संसद की दोनों सभाओं के पटल पर रखी जाएगी और सब राज्य सरकारों को भेजी जाएगी ।
+          h2.poppins-font.pt-3(style="text-align: justify") 2. जबकि संविधान की आठवीं अनुसूची में हिंदी के अतिरिक्त भारत की 21 मुख्य भाषाओं का उल्लेख किया गया है , और देश की शैक्षणिक एवं सांस्कृतिक उन्नति के लिए यह आवश्यक है कि इन भाषाओं के पूर्ण विकास हेतु सामूहिक उपाए किए जाने चाहिए : यह सभा संकल्प करती है कि हिंदी के साथ-साथ इन सब भाषाओं के समन्वित विकास हेतु भारत सरकार द्वारा राज्य सरकारों के सहयोग से एक कार्यक्रम तैयार किया जाएगा और उसे कार्यान्वित किया जाएगा ताकि वे शीघ्र समृद्ध हो और आधुनिक ज्ञान के संचार का प्रभावी माध्यम बनें ।
+          h2.poppins-font.pt-3(style="text-align: justify") 3. जबकि एकता की भावना के संवर्धन तथा देश के विभिन्न भागों में जनता में संचार की सुविधा हेतु यह आवश्यक है कि भारत सरकार द्वारा राज्य सरकारों के परामर्श से तैयार किए गए त्रि-भाषा सूत्र को सभी राज्यों में पूर्णत कार्यान्वित करने के लिए प्रभावी किया जाना चाहिए: यह सभा संकल्प करती है कि हिंदी भाषी क्षेत्रों में हिंदी तथा अंग्रेजी के अतिरिक्त एक आधुनिक भारतीय भाषा के, दक्षिण भारत की भाषाओं में से किसी एक को तरजीह देते हुए, और अहिंदी भाषी क्षेत्रों में प्रादेशिक भाषाओं एवं अंग्रेजी के साथ साथ हिंदी के अध्ययन के लिए उस सूत्र के अनुसार प्रबन्ध किया जाना चाहिए ।
+          h2.poppins-font.pt-3(style="text-align: justify") 4. और जबकि यह सुनिश्चित करना आवश्यक है कि संघ की लोक सेवाओं के विषय में देश के विभिन्न भागों के लोगों के न्यायोचित दावों और हितों का पूर्ण परित्राण किया जाए यह सभा संकल्प करती है कि-
+          h2.poppins-font.pt-3(style="text-align: justify") (क) कि उन विशेष सेवाओं अथवा पदों को छोड़कर जिनके लिए ऐसी किसी सेवा अथवा पद के कर्त्तव्यों के संतोषजनक निष्पादन हेतु केवल अंग्रेजी अथवा केवल हिंदी अथवा दोनों जैसी कि स्थिति हो, का उच्च स्तर का ज्ञान आवश्यक समझा जाए, संघ सेवाओं अथवा पदों के लिए भर्ती करने हेतु उम्मीदवारों के चयन के समय हिंदी अथवा अंग्रेजी में से किसी एक का ज्ञान अनिवार्यत होगा; और
+          h2.poppins-font.pt-3(style="text-align: justify") (ख) कि परीक्षाओं की भावी योजना, प्रक्रिया संबंधी पहलुओं एवं समय के विषय में संघ लोक सेवा आयोग के विचार जानने के पश्चात अखिल भारतीय एवं उच्चतर केन्द्रीय सेवाओं संबंधी परीक्षाओं के लिए संविधान की आठवीं अनुसूची में सम्मिलित सभी भाषाओं तथा अंग्रेजी को वैकल्पिक माध्यम के रूप में रखने की अनुमति होगी ।”
 
     FloatingNav
 </template>
@@ -39,58 +29,6 @@ export default {
   },
   data() {
     return {
-      items: [
-        {
-          name: "निदेशक ,रा. प्रो. सं गोवा",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "डॉ.शिव नारायण पाटीदार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "डॉ.प्रगति पटेल",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री मुनीश कुमार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री अमित कबिराज",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री एस सुदर्सन",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्रीमती सुविधा नाइक",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री श्रीराम कुमावत",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री राजकुमार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री संदीप जैसवार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        }
-      ],
       breadcrumbs: [
         {
           text: "होम",
@@ -98,9 +36,9 @@ export default {
           href: "/"
         },
         {
-          text: "हमारे बारे में",
+          text: "राजभाषा संकल्प",
           disabled: true,
-          href: "/about"
+          href: "/resolution"
         }
       ]
     };
@@ -113,65 +51,11 @@ export default {
   padding-bottom: 128px;
 }
 
-.gandhi-message-section {
-  display: flex;
-  align-items: center;
-  height: 75vh;
-
-  .about-text {
-    display: flex;
-    flex-direction: column;
-    span {
-      &.display-2 {
-        font-family: "Poppins", sans-serif !important;
-        line-height: 4rem;
-      }
-    }
-    h2 {
-      padding-top: 1rem;
-      &.headline {
-        font-family: "Poppins", sans-serif !important;
-      }
-    }
-    width: 70%;
-  }
-}
-
-.team-member {
-  padding-top: 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .display-4 {
-    text-align: center;
-  }
-
-  &-profiles {
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 3rem;
-  }
-
-  &-profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &-info {
-      display: flex;
-      padding-top: 0.5rem;
-      flex-direction: column;
-      align-items: center;
-      .username {
-        font-size: 1.6rem;
-      }
-      .department {
-        font-size: 1.2rem;
-        margin-top: -0.3rem;
-      }
-    }
-  }
+.poppins-font {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: normal !important;
+  font-family: "Poppins", sans-serif !important;
 }
 </style>
