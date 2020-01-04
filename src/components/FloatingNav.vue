@@ -74,7 +74,7 @@
         .expanded-menu-items5
           .span-items.floatingNavFlex.textDecorations
             .creators
-              span Created by:
+              span.text-yellow Created by:
               .creator-item
                 span Prajjwal Dimri
                 v-row.creator-icon
