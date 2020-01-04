@@ -9,10 +9,12 @@
               tr
                 th.text-left Date
                 th.text-left Subject
+                th.text-left Downloads
             tbody
               tr(v-for='item in information' :key='item.name')
                 td {{ item.date }}
                 td {{ item.subject }}
+                td {{ item.office_order }}
 </template>
 
 <script>
