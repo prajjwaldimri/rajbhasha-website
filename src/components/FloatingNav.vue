@@ -16,23 +16,23 @@
           .members.floatingNavFlex
             v-img(src="@/assets/member3.jpg" height="70" width="140")
             v-row.pl-3
-              a(href="/members")
+              router-link(to="/members")
                 v-btn(text).textDecorations.removeUnderline सदस्य
           .message.floatingNavFlex
             v-img(src="@/assets/sandesh4.jpg" height="70" width="140")
             v-row.pl-3
-              a(href="/message")
+              router-link(to="/message")
                 v-btn(text).textDecorations संदेश
 
           .lang-resolution.floatingNavFlex
             v-img(src="@/assets/oath.jpg" height="70" width="140")
             v-row.pl-3
-              a(href="/resolution")
+              router-link(to="/resolution")
                 v-btn(text).textDecorations राजभाषा संकल्प
           .thoughts.floatingNavFlex
             v-img(src="@/assets/vichar.jpg" height="70" width="140")
             v-row.pl-3
-              a(href="/thoughts")
+              router-link(to="/thoughts")
                 v-btn(text).textDecorations अभिभाषण /विचार
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -42,17 +42,17 @@
           .workshop.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140" )
             v-row.pl-3
-              a(href="/workshop")
+              router-link(to="/workshop")
                 v-btn(text).textDecorations हिंदी कार्यशाला
           .office-order.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row.pl-3
-              a(href="/officeOrder")
+              router-link(to="/officeOrder")
                 v-btn(text).textDecorations हिंदी कार्यालय आदेश
           .hindi-day-programme.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-row.pl-3
-              a(href="/hindiDayProgram")
+              router-link(to="/hindiDayProgram")
                 v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
 
 
@@ -175,9 +175,11 @@
   width: 100%;
   justify-content: space-around;
 }
+
 a:link {
   text-decoration: none;
 }
+
 .expanded-menu,
 .expanded-menu2,
 .expanded-menu3,
@@ -191,7 +193,7 @@ a:link {
   }
   visibility: hidden;
   opacity: 0;
-  height: 200%;
+  height: 200% !important;
   width: 100%;
   position: absolute;
   background: #424242;

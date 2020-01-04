@@ -9,12 +9,10 @@
         .right
           VueperSlides(autoplay fade :arrows="false" :slideRatio="3/5").no-shadow
             VueperSlide(v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" :image="slide.image")
-    FloatingNav
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import FloatingNav from "@/components/FloatingNav.vue";
 
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
@@ -23,7 +21,6 @@ export default {
   name: "home",
   components: {
     Navbar,
-    FloatingNav,
     VueperSlides,
     VueperSlide
   },
