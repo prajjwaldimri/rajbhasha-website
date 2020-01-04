@@ -43,52 +43,52 @@ export default {
         {
           name: "निदेशक ,रा. प्रो. सं गोवा",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "डॉ.शिव नारायण पाटीदार",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "डॉ.प्रगति पटेल",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री मुनीश कुमार",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री अमित कबिराज",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री एस सुदर्सन",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्रीमती सुविधा नाइक",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री श्रीराम कुमावत",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री राजकुमार",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री संदीप जैसवार",
           department: "department",
-          url: "@/assets/headshot.jpg"
+          url: require("@/assets/headshot.jpg")
         }
       ],
       breadcrumbs: [
