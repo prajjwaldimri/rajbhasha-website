@@ -78,42 +78,43 @@
               .creator-item
                 span Prajjwal Dimri
                 v-row.creator-icon
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://prajjwal.me/" target="_blank")
                     v-icon mdi-web
-                  a(href = "https://t.me/prajjwaldimri").pl-2
+                  a(href = "https://t.me/prajjwaldimri" target="_blank").pl-2
                     v-icon mdi-telegram
-                  a(href = "https://prajjwal.me/").pl-2
+                  a(href = "https://github.com/prajjwaldimri" target="_blank").pl-2
                     v-icon mdi-github-face
               .creator-item
                 span Subarna Dhar
                 v-row.creator-icon
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://www.linkedin.com/in/subarnadhar/" target="_blank")
                     v-icon mdi-linkedin-box
-                  a(href = "https://t.me/subarnadhar").pl-2
+                  a(href = "https://t.me/subarnadhar" target="_blank").pl-2
                     v-icon mdi-telegram
-                  a(href = "https://prajjwal.me/").pl-2
+                  a(href = "https://github.com/subarnadhar" target="_blank").pl-2
                     v-icon mdi-github-face
               .creator-item
                 span RV Kaundinya
                 v-row.creator-icon
-                  a(href = "https://prajjwal.me/")
+                  a(href = "https://www.linkedin.com/in/rv-kaundinya-4ba503110/" target="_blank")
                     v-icon mdi-linkedin-box
-                  a(href = "https://t.me/kaundinya77").pl-2
+                  a(href = "https://t.me/kaundinya77" target="_blank").pl-2
                     v-icon mdi-telegram
-                  a(href = "https://prajjwal.me/").pl-2
+                  a(href = "https://github.com/kaundinya77" target="_blank").pl-2
                     v-icon mdi-github-face
               .creator-item
                 span Deep Patel
                 v-row.creator-icon
-                  a(href = "https://www.instagram.com/deep2.0_")
+                  a(href = "https://www.instagram.com/deep2.0_" target="_blank")
                     v-icon mdi-instagram
-                  a(href = "https://t.me/deep2_0").pl-2
+                  a(href = "https://t.me/deep2_0" target="_blank").pl-2
                     v-icon mdi-telegram
-                  a(href = "https://prajjwal.me/").pl-2
+                  a(href = "https://github.com/Deep-patell" target="_blank").pl-2
                     v-icon mdi-github-face
             .contactus
               span notEmailAddress@gmail.com
-              v-icon mdi-facebook-box
+              a(href = "https://www.facebook.com/nitgoa/" target="_blank").pl-2
+                v-icon mdi-facebook-box
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
