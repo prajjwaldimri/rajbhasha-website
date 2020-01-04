@@ -4,12 +4,6 @@
 
     v-content
       v-container
-        .gandhi-message-section
-          .about-text.text-yellow
-            span.display-2 मैं हिन्दी के जरिए प्रांतीय भाषाओं को दबाना नहीं चाहता किन्तु उनके साथ हिन्दी को भी मिला देना चाहता हूँ।
-            h2.headline - महात्मा गांधी
-          v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
-
         .team-member
           span.display-4.text-yellow.font-weight-medium सदस्य
           .team-member-profiles
@@ -98,9 +92,9 @@ export default {
           href: "/"
         },
         {
-          text: "हमारे बारे में",
+          text: "Sadashya",
           disabled: true,
-          href: "/about"
+          href: "/members"
         }
       ]
     };
