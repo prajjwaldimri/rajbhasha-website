@@ -12,9 +12,6 @@ export default {
   name: "App",
   components: {
     FloatingNav
-  },
-  beforeRouteUpdate(to, from, next) {
-    console.log(to, from, next);
   }
 };
 </script>
