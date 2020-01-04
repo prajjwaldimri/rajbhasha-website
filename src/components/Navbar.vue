@@ -1,11 +1,11 @@
 <template lang="pug">
   v-toolbar(:flat="isFlat" :color="color").top-toolbar
     .toolbar-content
-      v-breadcrumbs(:items="breadcrumbs" divider="/" large).pa-0.d-none.d-lg-block
+      v-breadcrumbs(:items="breadcrumbs" divider="/" large).pa-0
         template(v-slot:item="props")
           v-breadcrumbs-item(:href="props.item.href" :class="[props.item.disabled && 'disabled', 'not-disabled']")
             | {{ props.item.text.toUpperCase() }}
-      v-toolbar-title
+      v-toolbar-title.d-none.d-sm-block
         a.logo(href="http://www.nitgoa.ac.in/" target="_blank")
           v-img(src="@/assets/nitlogo.png" height="24" width="24" )
           span राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
