@@ -3,15 +3,18 @@
     transition(name="fade" mode="out-in")
       router-view
     FloatingNav
+    Footer
 
 </template>
 
 <script>
 import FloatingNav from "@/components/FloatingNav.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
   components: {
-    FloatingNav
+    FloatingNav,
+    Footer
   }
 };
 </script>

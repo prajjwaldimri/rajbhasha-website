@@ -128,7 +128,7 @@
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    v-btn(fab bottom right fixed @click="sheet=true").d-lg-none
+    v-btn(fab bottom color="grey" right fixed @click="sheet=true").d-lg-none.darken-3
       v-icon(color="#feee77") mdi-menu
     v-bottom-sheet(v-model="sheet").d-lg-none
       v-list
@@ -138,7 +138,7 @@
             v-list-item-content
               v-list-item-title(v-text="item.title")
 
-          v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to")
+          v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to" @click="sheet=false")
             v-list-item-content
               v-list-item-title(v-text="subItem.title")
 
