@@ -62,7 +62,9 @@
         .expanded-menu-items3
           .hindi-writing.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations.pl-3 हिंदी लेखा
+            v-row.pl-3
+              router-link(to="/writings")
+                v-btn(text).textDecorations.pl-3 हिंदी लेखा
           .yearly-magazine.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-btn(text).textDecorations.pl-3 वार्षिक पत्रिका

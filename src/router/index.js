@@ -9,6 +9,7 @@ import Links from "../views/Links.vue";
 import Workshop from "../views/Workshop.vue";
 import HindiDayProgram from "../views/HindiDayProgram.vue";
 import OfficeOrder from "../views/OfficeOrder.vue";
+import Writings from "../views/Writings.vue";
 
 Vue.use(VueRouter);
 
@@ -57,6 +58,11 @@ const routes = [
     path: "/officeOrder",
     name: "officeOrder",
     component: OfficeOrder
+  },
+  {
+    path: "/writings",
+    name: "writings",
+    component: Writings
   }
 ];
 
