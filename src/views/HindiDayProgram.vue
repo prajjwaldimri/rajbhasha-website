@@ -30,38 +30,41 @@ export default {
     height: 300,
     information: [
       {
-        date: "28 / 12 / 2019",
-        subject: "I saw what you emanate I held my hand to take",
+        date: "१२/०१/२०१७ ",
+        subject:
+          "हिंदी सप्ताह का शुभ आरंभ तथा हिंदी साहित्य का परिचय : हिंदी समिति की पेशकश",
         office_order: "Download"
       },
       {
-        date: "29 / 12 / 2019",
-        subject: "A piece of it with me Passed through me like Gamma rays",
+        date: "१३/०१/२०१७ ",
+        subject:
+          "स्वरचित हिंदी काव्य पाठ प्रतियोगिता एवं हिंदी हास्य काव्य पाठ प्रतियोगिता",
         office_order: "Download"
       },
       {
-        date: "30 / 12 / 2019",
-        subject: "It burned my soul to see A thing with such beauty",
+        date: "१४/०१/२०१७ ",
+        subject: "हिंदी हस्त लेखन एवं हिंदी टंकण प्रतियोगिता ",
         office_order: "Download"
       },
       {
-        date: "31 / 12 / 2019",
-        subject: "Stratosphere",
+        date: "१५/०१/२०१७ ",
+        subject: "वाद संवाद : वर्तमान तकनिकी में नवाचार एवं लाभान्वित समुदाय ",
         office_order: "Download"
       },
       {
-        date: "31 / 12 / 2019",
-        subject: "Floating in your stare",
+        date: "१८/०१/२०१७ ",
+        subject:
+          "हिंदी आदर्श वाक्य लेखन प्रतियोगिता तथा हिंदी सप्ताह समापन समारोह ",
         office_order: "Download"
       },
       {
-        date: "32 / 12 / 2019",
-        subject: "Take me far from here",
+        date: "१०/१०/२०१८",
+        subject: "हिंदी टंकण एवं हिंदी हस्त लेखन प्रतियोगिता",
         office_order: "Download"
       },
       {
-        date: "33 / 12 / 2019",
-        subject: "Are you even there? I miss the way you felt to breathe",
+        date: "१५/१०/२०१८",
+        subject: "निबंध प्रतियोगिता",
         office_order: "Download"
       }
     ],
