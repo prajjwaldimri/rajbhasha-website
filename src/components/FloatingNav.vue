@@ -76,9 +76,9 @@
         .expanded-menu-items5
           .span-items.floatingNavFlex.textDecorations
             .creators
-              span.text-yellow Created by:
+              span.text-yellow निर्माता:
               .creator-item
-                span Prajjwal Dimri
+                span प्रज्जवल डिमरी
                 v-row.creator-icon
                   a(href = "https://prajjwal.me/" target="_blank")
                     v-icon mdi-web
@@ -87,7 +87,7 @@
                   a(href = "https://github.com/prajjwaldimri" target="_blank").pl-2
                     v-icon mdi-github-face
               .creator-item
-                span Subarna Dhar
+                span सुबर्णा धर
                 v-row.creator-icon
                   a(href = "https://www.linkedin.com/in/subarnadhar/" target="_blank")
                     v-icon mdi-linkedin-box
@@ -96,7 +96,7 @@
                   a(href = "https://github.com/subarnadhar" target="_blank").pl-2
                     v-icon mdi-github-face
               .creator-item
-                span RV Kaundinya
+                span आर वी कौंडिन्या
                 v-row.creator-icon
                   a(href = "https://www.linkedin.com/in/rv-kaundinya-4ba503110/" target="_blank")
                     v-icon mdi-linkedin-box
@@ -105,7 +105,7 @@
                   a(href = "https://github.com/kaundinya77" target="_blank").pl-2
                     v-icon mdi-github-face
               .creator-item
-                span Deep Patel
+                span दीप पटेल
                 v-row.creator-icon
                   a(href = "https://www.instagram.com/deep2.0_" target="_blank")
                     v-icon mdi-instagram
@@ -114,9 +114,10 @@
                   a(href = "https://github.com/Deep-patell" target="_blank").pl-2
                     v-icon mdi-github-face
             .contactus
-              h5 Rajbhasha Prakoshtha
-              h5 National Institute of Technology Goa
-              h5 Farmagudi, Ponda, Goa 403401
+              h5 राजभाषा प्रकोष्ठ
+              h5 राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
+              h5 फार्मागुडी, पोंडा, गोवा &nbsp;
+                span(style="font-family: sans-serif; font-size: 1.1rem;")  - ४०३४०१
             .contactus-icon
               a(href = "mailto:xyz@gmail.com" target="_blank")
                 v-icon(size = "1.2rem") mdi-email

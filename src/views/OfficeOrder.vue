@@ -7,9 +7,9 @@
           template(v-slot:default='')
             thead
               tr
-                th.text-left Date
-                th.text-left Subject
-                th.text-left Circular/Order
+                th.text-left दिनांक
+                th.text-left विषय
+                th.text-left परिपत्र/आदेश
             tbody
               tr(v-for='item in information' :key='item.name')
                 td {{ item.date }}

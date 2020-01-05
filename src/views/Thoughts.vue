@@ -29,7 +29,7 @@ export default {
           href: "/"
         },
         {
-          text: "Abhibhashan/Vichar",
+          text: "अभिभाषण /विचार",
           disabled: true,
           href: "/thoughts"
         }
