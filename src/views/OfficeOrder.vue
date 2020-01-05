@@ -9,7 +9,7 @@
               tr
                 th.text-left Date
                 th.text-left Subject
-                th.text-left Downloads
+                th.text-left Circular/Order
             tbody
               tr(v-for='item in information' :key='item.name')
                 td {{ item.date }}

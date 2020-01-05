@@ -10,20 +10,6 @@
             h2.headline - महात्मा गांधी
           v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
 
-        .team-member
-          span.display-4.text-yellow.font-weight-medium सदस्य
-          .team-member-profiles
-            .team-member-profile(v-for="item in items" :key="item.id")
-              v-avatar(size="128")
-                v-img(:src="item.url" aspect-ratio="0.9")
-              .team-member-profile-info
-                span.username.font-weight-light {{item.name}}
-                span.department.font-weight-medium.pt-1 {{item.department}}
-                v-row(justify="space-around").pt-2
-                  v-icon.mr-2 mdi-facebook-box
-                  v-icon.mr-2 mdi-phone
-                  v-icon.mr-2 mdi-whatsapp
-
 </template>
 
 <script>
@@ -36,58 +22,6 @@ export default {
   },
   data() {
     return {
-      items: [
-        {
-          name: "निदेशक ,रा. प्रो. सं गोवा",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "डॉ.शिव नारायण पाटीदार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "डॉ.प्रगति पटेल",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री मुनीश कुमार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री अमित कबिराज",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री एस सुदर्सन",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्रीमती सुविधा नाइक",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री श्रीराम कुमावत",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री राजकुमार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        },
-        {
-          name: "श्री संदीप जैसवार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
-        }
-      ],
       breadcrumbs: [
         {
           text: "होम",
@@ -95,9 +29,9 @@ export default {
           href: "/"
         },
         {
-          text: "हमारे बारे में",
+          text: "Abhibhashan/Vichar",
           disabled: true,
-          href: "/about"
+          href: "/thoughts"
         }
       ]
     };
@@ -108,5 +42,29 @@ export default {
 <style lang="scss">
 .about {
   padding-bottom: 128px;
+}
+
+.gandhi-message-section {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    span {
+      &.display-2 {
+        font-family: "Poppins", sans-serif !important;
+        line-height: 4rem;
+      }
+    }
+    h2 {
+      padding-top: 1rem;
+      &.headline {
+        font-family: "Poppins", sans-serif !important;
+      }
+    }
+    width: 70%;
+  }
 }
 </style>

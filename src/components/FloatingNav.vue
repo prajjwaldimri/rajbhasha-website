@@ -62,7 +62,9 @@
         .expanded-menu-items3
           .hindi-writing.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
-            v-btn(text).textDecorations.pl-3 हिंदी लेखा
+            v-row.pl-3
+              router-link(to="/writings")
+                v-btn(text).textDecorations.pl-3 हिंदी लेखा
           .yearly-magazine.floatingNavFlex
             v-img(src="@/assets/gandhi.jpg" height="70" width="140")
             v-btn(text).textDecorations.pl-3 वार्षिक पत्रिका
@@ -117,16 +119,16 @@
               h5 Farmagudi, Ponda, Goa 403401
             .contactus-icon
               a(href = "mailto:xyz@gmail.com" target="_blank")
-                v-icon mdi-email
+                v-icon(size = "1.2rem") mdi-email
               a(href = "https://www.facebook.com/nitgoa/" target="_blank")
-                v-icon mdi-facebook-box
+                v-icon(size = "1.2rem") mdi-facebook-box
               a(href = "https://twitter.com/NITGoa_Official" target="_blank")
-                v-icon mdi-twitter
+                v-icon(size = "1.2rem") mdi-twitter
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    v-btn(fab bottom right fixed @click="sheet=true").d-lg-none
+    v-btn(fab bottom color="grey" right fixed @click="sheet=true").d-lg-none.darken-3
       v-icon(color="#feee77") mdi-menu
     v-bottom-sheet(v-model="sheet").d-lg-none
       v-list
@@ -136,7 +138,7 @@
             v-list-item-content
               v-list-item-title(v-text="item.title")
 
-          v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to")
+          v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to" @click="sheet=false")
             v-list-item-content
               v-list-item-title(v-text="subItem.title")
 
@@ -220,6 +222,7 @@ a:link {
 .span-items {
   display: flex;
   flex: 1 1 0;
+  justify-items: center;
   span {
     justify-items: space-around;
   }
@@ -228,7 +231,7 @@ a:link {
 .creators {
   display: flex;
   width: 60%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .creator-item {
@@ -242,11 +245,13 @@ a:link {
 .contactus {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  //align-items: center;
+  text-align: end;
 }
 .contactus-icon {
   display: flex;
   flex-flow: column;
+  text-align: end;
 }
 .nav-mobile {
   position: fixed;
