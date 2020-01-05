@@ -220,6 +220,7 @@ a:link {
 .span-items {
   display: flex;
   flex: 1 1 0;
+  justify-items: center;
   span {
     justify-items: space-around;
   }
@@ -228,7 +229,7 @@ a:link {
 .creators {
   display: flex;
   width: 60%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .creator-item {
@@ -242,12 +243,13 @@ a:link {
 .contactus {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  //align-items: center;
+  text-align: end;
 }
 .contactus-icon {
   display: flex;
-  width: 5%;
   flex-flow: column;
+  text-align: end;
 }
 .nav-mobile {
   position: fixed;
