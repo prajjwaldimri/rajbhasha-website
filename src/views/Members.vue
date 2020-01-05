@@ -116,6 +116,13 @@ export default {
   &-profiles {
     :first-child {
       grid-column: 1 / span 3;
+      @media (max-width: 1264px) {
+        grid-column: 1 / span 1;
+      }
+    }
+
+    @media (max-width: 1264px) {
+      grid-template-columns: 1fr;
     }
     padding-top: 2rem;
     display: grid;
