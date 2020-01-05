@@ -7,9 +7,9 @@
           template(v-slot:default='')
             thead
               tr
-                th.text-left Date
-                th.text-left Subject
-                th.text-left Download
+                th.text-left दिनांक
+                th.text-left विषय
+                th.text-left डाउनलोड
             tbody
               tr(v-for='item in information' :key='item.name')
                 td {{ item.date }}
@@ -74,7 +74,7 @@ export default {
         href: "/"
       },
       {
-        text: "Hindi Lekha",
+        text: "हिंदी लेखा",
         disabled: true,
         href: "/writings"
       }
