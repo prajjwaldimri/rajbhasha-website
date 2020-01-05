@@ -117,11 +117,11 @@
               h5 Farmagudi, Ponda, Goa 403401
             .contactus-icon
               a(href = "mailto:xyz@gmail.com" target="_blank")
-                v-icon mdi-email
+                v-icon(size = "1.2rem") mdi-email
               a(href = "https://www.facebook.com/nitgoa/" target="_blank")
-                v-icon mdi-facebook-box
+                v-icon(size = "1.2rem") mdi-facebook-box
               a(href = "https://twitter.com/NITGoa_Official" target="_blank")
-                v-icon mdi-twitter
+                v-icon(size = "1.2rem") mdi-twitter
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -246,6 +246,7 @@ a:link {
 }
 .contactus-icon {
   display: flex;
+  width: 5%;
   flex-flow: column;
 }
 .nav-mobile {
