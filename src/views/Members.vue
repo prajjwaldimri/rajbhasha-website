@@ -44,7 +44,7 @@ export default {
         {
           name: "डॉ.प्रगति पटेल",
           department: "department",
-          url: require("@/assets/headshot.jpg")
+          url: require("@/assets/pragati.jpg")
         },
         {
           name: "श्री मुनीश कुमार",
@@ -54,12 +54,12 @@ export default {
         {
           name: "श्री अमित कबिराज",
           department: "department",
-          url: require("@/assets/headshot.jpg")
+          url: require("@/assets/amit.jpg")
         },
         {
           name: "श्री एस सुदर्सन",
           department: "department",
-          url: require("@/assets/headshot.jpg")
+          url: require("@/assets/sudhu.jpg")
         },
         {
           name: "श्रीमती सुविधा नाइक",
@@ -69,7 +69,7 @@ export default {
         {
           name: "श्री श्रीराम कुमावत",
           department: "department",
-          url: require("@/assets/headshot.jpg")
+          url: require("@/assets/ram.jpg")
         },
         {
           name: "श्री राजकुमार",
