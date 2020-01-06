@@ -9,12 +9,12 @@
               tr
                 th.text-left दिनांक
                 th.text-left विषय
-                th.text-left परिपत्र/आदेश
+                th.text-left डाउनलोड
             tbody
               tr(v-for='item in information' :key='item.name')
                 td {{ item.date }}
                 td {{ item.subject }}
-                td {{ item.office_order }}
+                td {{ item.download }}
 </template>
 
 <script>
@@ -34,37 +34,37 @@ export default {
       {
         date: "28 / 12 / 2019",
         subject: "I saw what you emanate I held my hand to take",
-        office_order: "Download"
+        download: "डाउनलोड"
       },
       {
         date: "29 / 12 / 2019",
         subject: "A piece of it with me Passed through me like Gamma rays",
-        office_order: "Download"
+        download: "डाउनलोड"
       },
       {
         date: "30 / 12 / 2019",
         subject: "It burned my soul to see A thing with such beauty",
-        office_order: "Download"
+        download: "डाउनलोड"
       },
       {
         date: "31 / 12 / 2019",
         subject: "Stratosphere",
-        office_order: "Download"
+        download: "डाउनलोड"
       },
       {
         date: "31 / 12 / 2019",
         subject: "Floating in your stare",
-        office_order: "Download"
+        download: "डाउनलोड"
       },
       {
         date: "32 / 12 / 2019",
         subject: "Take me far from here",
-        office_order: "Download"
+        download: "डाउनलोड"
       },
       {
         date: "33 / 12 / 2019",
         subject: "Are you even there? I miss the way you felt to breathe",
-        office_order: "Download"
+        download: "डाउनलोड"
       }
     ],
     breadcrumbs: [
