@@ -107,8 +107,8 @@
               .creator-item
                 span दीप पटेल
                 v-row.creator-icon
-                  a(href = "https://www.instagram.com/deep2.0_" target="_blank")
-                    v-icon mdi-instagram
+                  a(href = "https://www.linkedin.com/in/deep-patel-71473519b/" target="_blank")
+                    v-icon mdi-linkedin-box
                   a(href = "https://t.me/deep2_0" target="_blank").pl-2
                     v-icon mdi-telegram
                   a(href = "https://github.com/Deep-patell" target="_blank").pl-2
@@ -133,15 +133,15 @@
       v-icon(color="#feee77") mdi-menu
     v-bottom-sheet(v-model="sheet").d-lg-none
       v-list
-        v-subheader Navigation
+        v-subheader मेनू
         v-list-group(v-for="item in items" :key="item.title" v-model="item.active" no-action)
           template(v-slot:activator)
             v-list-item-content
-              v-list-item-title(v-text="item.title")
+              v-list-item-title(v-text="item.title").pt-2
 
           v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to" @click="sheet=false")
             v-list-item-content
-              v-list-item-title(v-text="subItem.title")
+              v-list-item-title(v-text="subItem.title").pt-2
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -246,7 +246,6 @@ a:link {
 .contactus {
   display: flex;
   flex-flow: column;
-  //align-items: center;
   text-align: end;
 }
 .contactus-icon {
@@ -310,7 +309,7 @@ export default {
           items: [
             {
               title: "हिन्दी लेखा",
-              to: "/"
+              to: "/writings"
             },
             {
               title: "वार्षिक पत्रिका",
