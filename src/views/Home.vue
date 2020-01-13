@@ -35,7 +35,7 @@ export default {
         title: "Slide #2",
         content: "Slide content.",
         image: require("@/assets/clouds.jpg")
-      }
+      } //Add a comma here before adding another slide
     ],
     breadcrumbs: [
       {

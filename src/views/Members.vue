@@ -80,7 +80,7 @@ export default {
           name: "श्री संदीप जैसवार",
           department: "department",
           url: require("@/assets/headshot.jpg")
-        }
+        } //Add a comma here before adding another member
       ],
       breadcrumbs: [
         {
