@@ -81,6 +81,7 @@ export default {
           department: "बहुकार्यन अधिकारीगण ",
           url: require("@/assets/headshot.jpg")
         } // Add new members here
+        //Add a comma here before adding another member
       ],
       breadcrumbs: [
         {

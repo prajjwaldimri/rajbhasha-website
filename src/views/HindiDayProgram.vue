@@ -29,6 +29,7 @@ export default {
     fixedHeader: false,
     height: 300,
     information: [
+      //Add Code in here
       {
         date: "१५/१०/२०१८",
         subject: "निबंध प्रतियोगिता",

@@ -31,6 +31,7 @@ export default {
     fixedHeader: false,
     height: 300,
     information: [
+      //Add code here
       {
         date: "28 / 12 / 2019",
         subject: "I saw what you emanate I held my hand to take",
