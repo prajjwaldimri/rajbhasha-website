@@ -38,49 +38,49 @@ export default {
         },
         {
           name: "डॉ.शिव नारायण पाटीदार",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
+          department: "सहायक प्राध्यापक ,",
+          url: require("@/assets/shiv.jpg")
         },
         {
           name: "डॉ.प्रगति पटेल",
-          department: "department",
+          department: "सहायक प्राध्यापक ",
           url: require("@/assets/pragati.jpg")
         },
         {
           name: "श्री मुनीश कुमार",
-          department: "department",
+          department: "सहायक पुस्तकालयाध्यक्ष",
           url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री अमित कबिराज",
-          department: "department",
+          department: "सहायक रजिस्ट्रार",
           url: require("@/assets/amit.jpg")
         },
         {
           name: "श्री एस सुदर्सन",
-          department: "department",
+          department: "तकनीकी सहायक",
           url: require("@/assets/sudhu.jpg")
         },
         {
           name: "श्रीमती सुविधा नाइक",
-          department: "department",
+          department: "तकनीकी सहायक",
           url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री श्रीराम कुमावत",
-          department: "department",
+          department: "technician",
           url: require("@/assets/ram.jpg")
         },
         {
           name: "श्री राजकुमार",
-          department: "department",
+          department: "बहुकार्यन अधिकारीगण ",
           url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री संदीप जैसवार",
-          department: "department",
+          department: "बहुकार्यन अधिकारीगण ",
           url: require("@/assets/headshot.jpg")
-        }
+        } // Add new members here
       ],
       breadcrumbs: [
         {
