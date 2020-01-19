@@ -49,7 +49,7 @@ export default {
         {
           name: "श्री मुनीश कुमार",
           department: "सहायक पुस्तकालयाध्यक्ष",
-          url: require("@/assets/headshot.jpg")
+          url: require("@/assets/munesh.jpg")
         },
         {
           name: "श्री अमित कबिराज",
@@ -64,22 +64,22 @@ export default {
         {
           name: "श्रीमती सुविधा नाइक",
           department: "तकनीकी सहायक",
-          url: require("@/assets/headshot.jpg")
+          url: require("@/assets/suvida.jpg")
         },
         {
           name: "श्री श्रीराम कुमावत",
-          department: "technician",
+          department: "तकनीशियन",
           url: require("@/assets/ram.jpg")
         },
         {
           name: "श्री राजकुमार",
-          department: "बहुकार्यन अधिकारीगण ",
+          department: "बहुविध कार्य कर्मचारी ",
           url: require("@/assets/headshot.jpg")
         },
         {
           name: "श्री संदीप जैसवार",
-          department: "बहुकार्यन अधिकारीगण ",
-          url: require("@/assets/headshot.jpg")
+          department: "बहुविध कार्य कर्मचारी ",
+          url: require("@/assets/sandeep.jpg")
         } // Add new members here
         //Add a comma here before adding another member
       ],
