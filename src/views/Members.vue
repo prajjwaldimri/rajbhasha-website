@@ -32,17 +32,17 @@ export default {
     return {
       items: [
         {
-          name: "निदेशक ,रा. प्रो. सं गोवा",
-          department: "department",
-          url: require("@/assets/headshot.jpg")
+          name: "डॉ. गोपाल मुगेराय",
+          department: "निदेशक ,रा. प्रो. सं गोवा",
+          url: require("@/assets/director.jpg")
         },
         {
-          name: "डॉ.शिव नारायण पाटीदार",
-          department: "सहायक प्राध्यापक ,",
+          name: "डॉ. शिव नारायण पाटीदार",
+          department: "सहायक प्राध्यापक",
           url: require("@/assets/shiv.jpg")
         },
         {
-          name: "डॉ.प्रगति पटेल",
+          name: "डॉ. प्रगति पटेल",
           department: "सहायक प्राध्यापक ",
           url: require("@/assets/pragati.jpg")
         },
