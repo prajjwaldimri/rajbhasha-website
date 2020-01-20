@@ -22,7 +22,7 @@
 
 <style lang="scss">
 .v-footer {
-  padding-top: 5rem !important;
+  padding-top: 2rem !important;
   padding-bottom: 2rem !important;
 }
 

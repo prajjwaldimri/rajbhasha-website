@@ -68,6 +68,10 @@ export default {
     font-size: 1.7rem;
     line-height: 4rem;
     padding-left: 0.5rem;
+    @media (max-width: 1264px) {
+      width: 100%;
+      font-size: 0.8rem !important;
+    }
   }
   a:link {
     text-decoration: none;
@@ -75,6 +79,10 @@ export default {
   a {
     outline: none;
     display: flex;
+  }
+  @media (max-width: 1264px) {
+    width: 100%;
+    line-height: 0.2rem;
   }
 }
 </style>

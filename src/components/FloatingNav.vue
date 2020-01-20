@@ -316,6 +316,15 @@ export default {
               to: "/"
             }
           ]
+        },
+        {
+          title: "आवश्यक लिंक्स",
+          items: [
+            {
+              title: "",
+              to: "/links"
+            }
+          ]
         }
       ]
     };
