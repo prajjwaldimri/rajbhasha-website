@@ -10,7 +10,7 @@ import Workshop from "../views/Workshop.vue";
 import HindiDayProgram from "../views/HindiDayProgram.vue";
 import OfficeOrder from "../views/OfficeOrder.vue";
 import Writings from "../views/Writings.vue";
-
+import TrimesterReport from "../views/TrimesterReport.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -63,6 +63,11 @@ const routes = [
     path: "/writings",
     name: "writings",
     component: Writings
+  },
+  {
+    path: "/trimesterReport",
+    name: "trimesterReport",
+    component: TrimesterReport
   }
 ];
 
