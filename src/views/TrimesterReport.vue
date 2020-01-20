@@ -7,12 +7,13 @@
           template(v-slot:default='')
             thead
               tr
-                th.text-left अवधि 
-                th.text-left डाउनलोड 
+                th.text-left अवधि
+                th.text-left डाउनलोड
             tbody
               tr(v-for='item in information' :key='item.name')
                 td {{ item.duration }}
-                td {{ item.download }}
+                td 
+                  a(:href="item.href" target="_blank") {{ item.download }}
 </template>
 
 <script>
@@ -32,7 +33,9 @@ export default {
       //Add Code in here
       {
         duration: "जुलाई से सितमबर १९",
-        download: "डाउनलोड"
+        download: "डाउनलोड",
+        href:
+          "https://drive.google.com/open?id=1mjl07QuN3uH8-qLucFQUGI5QjWQu8HrK"
       }
     ],
     breadcrumbs: [
