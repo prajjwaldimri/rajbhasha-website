@@ -21,9 +21,9 @@
               v-icon(color = "#feee77") mdi-open-in-new
               span.text-yellow  इ-महाशब्दकोश की लिंक
           v-row
-            a(href="/trimesterReport" target="_blank")
+            a(href="/trimesterReport")
               v-icon(color = "#feee77") mdi-pdf-box
-              span.text-yellow संस्थान की राजभाषा प्रकोष्ठ की त्रिमाही रिपोर्ट
+              span.text-yellow संस्थान की राजभाषा प्रकोष्ठ की तिमाही रिपोर्ट
           v-row
             a(href="https://rajbhasha.nic.in/" target="_blank")
               v-icon(color = "#feee77") mdi-open-in-new
