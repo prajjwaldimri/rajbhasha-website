@@ -40,17 +40,17 @@
       v-toolbar-items.expanded-menu2
         .expanded-menu-items2
           .workshop.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140" )
+            v-img(src="@/assets/workshop.jpg" height="70" width="140" )
             v-row.pl-3
               router-link(to="/workshop")
                 v-btn(text).textDecorations हिंदी कार्यशाला
           .office-order.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-img(src="@/assets/officeorder.jpg" height="70" width="140")
             v-row.pl-3
               router-link(to="/officeOrder")
                 v-btn(text).textDecorations हिंदी कार्यालय आदेश
           .hindi-day-programme.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-img(src="@/assets/hindidivas.jpg" height="70" width="140")
             v-row.pl-3
               router-link(to="/hindiDayProgram")
                 v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
@@ -61,12 +61,12 @@
       v-toolbar-items.expanded-menu3
         .expanded-menu-items3
           .hindi-writing.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-img(src="@/assets/hindiLetter.jpg" height="70" width="140")
             v-row.pl-3
               router-link(to="/writings")
                 v-btn(text).textDecorations.pl-3 हिंदी लेखा
           .yearly-magazine.floatingNavFlex
-            v-img(src="@/assets/gandhi.jpg" height="70" width="140")
+            v-img(src="@/assets/magazine.jpg" height="70" width="140")
             v-btn(text).textDecorations.pl-3 वार्षिक पत्रिका
 
 
