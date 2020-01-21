@@ -59,7 +59,7 @@ export default {
           department: "सहायक पुस्तकालयाध्यक्ष",
           url: require("@/assets/munesh.jpg"),
           email: "mailto:asst.librarian@nitgoa.ac.in",
-          phone: "tel:"
+          phone: "tel:+91-832-2404223"
         },
         {
           name: "श्री अमित कबिराज",
@@ -87,7 +87,7 @@ export default {
           department: "तकनीशियन",
           url: require("@/assets/ram.jpg"),
           email: "mailto:shriram@nitgoa.ac.in",
-          phone: "tel:"
+          phone: "tel:+91-832-2404220"
         },
         {
           name: "श्री राजकुमार",
