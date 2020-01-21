@@ -92,7 +92,7 @@ export default {
         {
           name: "श्री राजकुमार",
           department: "बहुविध कार्य कर्मचारी ",
-          url: require("@/assets/headshot.jpg"),
+          url: require("@/assets/rajkumar.jpg"),
           email: "mailto:rajkumar@nitgoa.ac.in",
           phone: "tel:"
         },
