@@ -14,23 +14,23 @@
       v-toolbar-items.expanded-menu
         .expanded-menu-items
           .members.floatingNavFlex
-            v-img(src="@/assets/member3.jpg" height="70" width="140")
+            v-img(src="@/assets/member.jpg" height="70" width="140")
             v-row.pl-3
               router-link(to="/members")
                 v-btn(text).textDecorations.removeUnderline सदस्य
           .message.floatingNavFlex
-            v-img(src="@/assets/sandesh4.jpg" height="70" width="140")
+            v-img(src="@/assets/sandesh1.jpg" height="70" width="140")
             v-row.pl-3
               router-link(to="/message")
                 v-btn(text).textDecorations संदेश
 
           .lang-resolution.floatingNavFlex
-            v-img(src="@/assets/oath.jpg" height="70" width="140")
+            v-img(src="@/assets/oath3.jpg" height="70" width="140")
             v-row.pl-3
               router-link(to="/resolution")
                 v-btn(text).textDecorations राजभाषा संकल्प
           .thoughts.floatingNavFlex
-            v-img(src="@/assets/vichar.jpg" height="70" width="140")
+            v-img(src="@/assets/thoughts.jpg" height="70" width="140")
             v-row.pl-3
               router-link(to="/thoughts")
                 v-btn(text).textDecorations अभिभाषण /विचार
@@ -50,7 +50,7 @@
               router-link(to="/officeOrder")
                 v-btn(text).textDecorations हिंदी कार्यालय आदेश
           .hindi-day-programme.floatingNavFlex
-            v-img(src="@/assets/hindidivas.jpg" height="70" width="140")
+            v-img(src="@/assets/hindidivas1.jpg" height="70" width="140")
             v-row.pl-3
               router-link(to="/hindiDayProgram")
                 v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
