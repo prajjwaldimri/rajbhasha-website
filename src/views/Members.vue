@@ -36,70 +36,70 @@ export default {
         {
           name: "डॉ. गोपाल मुगेराय",
           department: "निदेशक ,रा. प्रो. सं गोवा",
-          url: require("@/assets/director.jpg"),
+          url: require("@/assets/Prof.(Dr.) Gopal Mugeraya.jpg"),
           email: "mailto:",
           phone: "tel:"
         },
         {
           name: "डॉ. शिव नारायण पाटीदार",
           department: "सहायक प्राध्यापक",
-          url: require("@/assets/shiv.jpg"),
+          url: require("@/assets/Dr Shivnarayan Patidar.jpg"),
           email: "mailto:shivnarayan.patidar@nitgoa.ac.in ",
           phone: "tel:"
         },
         {
           name: "डॉ. प्रगति पटेल",
           department: "सहायक प्राध्यापक ",
-          url: require("@/assets/pragati.jpg"),
+          url: require("@/assets/Pragati Patel.jpg"),
           email: "mailto:pragati@nitgoa.ac.in",
           phone: "tel:+91-832-2404204"
         },
         {
           name: "श्री मुनीश कुमार",
           department: "सहायक पुस्तकालयाध्यक्ष",
-          url: require("@/assets/munesh.jpg"),
+          url: require("@/assets/Munesh Kumar.jpg"),
           email: "mailto:asst.librarian@nitgoa.ac.in",
           phone: "tel:+91-832-2404223"
         },
         {
           name: "श्री अमित कबिराज",
           department: "सहायक रजिस्ट्रार",
-          url: require("@/assets/amit.jpg"),
+          url: require("@/assets/Amit Kabiraj.jpg"),
           email: "mailto:asst.reg@nitgoa.ac.in",
           phone: "tel:+91-832-2404207"
         },
         {
           name: "श्री एस सुदर्सन",
           department: "तकनीकी सहायक",
-          url: require("@/assets/sudhu.jpg"),
+          url: require("@/assets/Sudharsan Sridharan.jpg"),
           email: "mailto:sudharsan@nitgoa.ac.in",
           phone: "tel:+91-9405153443"
         },
         {
           name: "श्रीमती सुविधा नाइक",
           department: "तकनीकी सहायक",
-          url: require("@/assets/suvida.jpg"),
+          url: require("@/assets/Suvida Madkaiker.jpg"),
           email: "mailto:suvidanaik@nitgoa.ac.in",
           phone: "tel:"
         },
         {
           name: "श्री श्रीराम कुमावत",
           department: "तकनीशियन",
-          url: require("@/assets/ram.jpg"),
+          url: require("@/assets/Ram Kumawat.jpg"),
           email: "mailto:shriram@nitgoa.ac.in",
           phone: "tel:+91-832-2404220"
         },
         {
           name: "श्री राजकुमार",
           department: "बहुविध कार्य कर्मचारी ",
-          url: require("@/assets/rajkumar.jpg"),
+          url: require("@/assets/Kanneboina RajKumar.jpg"),
           email: "mailto:rajkumar@nitgoa.ac.in",
           phone: "tel:"
         },
         {
           name: "श्री संदीप जैसवार",
           department: "बहुविध कार्य कर्मचारी ",
-          url: require("@/assets/sandeep.jpg"),
+          url: require("@/assets/Sandeep Jaishwar.jpg"),
           email: "mailto:sandeep8025@nitgoa.ac.in",
           phone: "tel:"
         } // Add new members here
