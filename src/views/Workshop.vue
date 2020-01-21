@@ -31,38 +31,19 @@ export default {
     information: [
       //Add Code in here
       {
-        date: "28 / 12 / 2019",
-        subject: "I saw what you emanate I held my hand to ",
+        date: "Coming Soon",
+        subject:
+          "अभियांत्रिकी में वैज्ञानिक और तकनीकी शब्दावली के अनुप्रयोग पर दो दिनों की कार्यशाला",
         office_order: "Download"
       },
       {
-        date: "29 / 12 / 2019",
-        subject: "A piece of it with me Passed through me like Gamma rays",
+        date: "10 / 08 / 2018",
+        subject: "निबंध प्रतियोगिता ",
         office_order: "Download"
       },
       {
-        date: "30 / 12 / 2019",
-        subject: "It burned my soul to see A thing with such beauty",
-        office_order: "Download"
-      },
-      {
-        date: "31 / 12 / 2019",
-        subject: "Stratosphere",
-        office_order: "Download"
-      },
-      {
-        date: "31 / 12 / 2019",
-        subject: "Floating in your stare",
-        office_order: "Download"
-      },
-      {
-        date: "32 / 12 / 2019",
-        subject: "Take me far from here",
-        office_order: "Download"
-      },
-      {
-        date: "33 / 12 / 2019",
-        subject: "Are you even there? I miss the way you felt to breathe",
+        date: "12 / 09 / 2017",
+        subject: "हिंदी सपाह",
         office_order: "Download"
       }
     ],
