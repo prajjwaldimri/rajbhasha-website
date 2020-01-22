@@ -3,7 +3,7 @@
     .toolbar-content
       v-breadcrumbs(:items="breadcrumbs" divider="/" large).pa-0
         template(v-slot:item="props")
-          v-breadcrumbs-item(:href="props.item.href" :class="[props.item.disabled && 'disabled', 'not-disabled']")
+          v-breadcrumbs-item(:to="props.item.href" :class="[props.item.disabled && 'disabled', 'not-disabled']")
             | {{ props.item.text.toUpperCase() }}
       v-toolbar-title
         a.logo(href="http://www.nitgoa.ac.in/" target="_blank")
