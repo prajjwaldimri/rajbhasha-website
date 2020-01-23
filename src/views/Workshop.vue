@@ -35,16 +35,6 @@ export default {
         subject:
           "अभियांत्रिकी में वैज्ञानिक और तकनीकी शब्दावली के अनुप्रयोग पर दो दिनों की कार्यशाला",
         office_order: "Download"
-      },
-      {
-        date: "10 / 08 / 2018",
-        subject: "निबंध प्रतियोगिता ",
-        office_order: "Download"
-      },
-      {
-        date: "12 / 09 / 2017",
-        subject: "हिंदी सपाह",
-        office_order: "Download"
       }
     ],
     breadcrumbs: [

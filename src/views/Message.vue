@@ -14,7 +14,8 @@
               tr(v-for='item in information' :key='item.name')
                 td {{ item.date }}
                 td {{ item.subject }}
-                td {{ item.download }}
+                td 
+                  a(:href="item.href" target="_blank" style="color:white;text-decoration-line:underline;") {{ item.download }}
 </template>
 
 <script>
@@ -33,39 +34,43 @@ export default {
     information: [
       //Add code here
       {
-        date: "28 / 12 / 2019",
-        subject: "I saw what you emanate I held my hand to take",
-        download: "डाउनलोड"
+        date: "12 / 09 / 2018",
+        subject: "हिंदी दिवस संदेश",
+        download: "डाउनलोड",
+        href:
+          "https://drive.google.com/open?id=1Tq-oLVinv4JCllifm_cWo6ssMwEoCWat"
       },
       {
-        date: "29 / 12 / 2019",
-        subject: "A piece of it with me Passed through me like Gamma rays",
-        download: "डाउनलोड"
+        date: "14 / 09 / 2016",
+        subject:
+          "हिंदी दिवस के अवसर पर मानव संसाधन विकास भारत सरकार मंत्री जी का हिंदी संदेश",
+        download: "डाउनलोड",
+        href:
+          "https://drive.google.com/file/d/1IeDL8lXG_rlI6mMOEWIHCqsIsOqMd83z/view?usp=sharing"
+      },
+
+      {
+        date: "14 / 09  / 2015",
+        subject:
+          "हिंदी दिवस के अवसर पर भारत के राष्ट्रपति श्री प्रणब मुखर्जी का अभिभाषण",
+        download: "डाउनलोड",
+        href:
+          "https://drive.google.com/file/d/1VofmU-bU7U-0tKkol93KhqMa6TpYnNLj/view?usp=sharing"
       },
       {
-        date: "30 / 12 / 2019",
-        subject: "It burned my soul to see A thing with such beauty",
-        download: "डाउनलोड"
+        date: "14 / 09  / 2015",
+        subject: "हिंदी दिवस के अवसर पर माननीय गृह मंत्री जी का हिंदी संदेश ",
+        download: "डाउनलोड",
+        href:
+          "https://drive.google.com/open?id=1sXy13WASh82rtHkGlTL9nwZVc6WxHgUS"
       },
       {
-        date: "31 / 12 / 2019",
-        subject: "Stratosphere",
-        download: "डाउनलोड"
-      },
-      {
-        date: "31 / 12 / 2019",
-        subject: "Floating in your stare",
-        download: "डाउनलोड"
-      },
-      {
-        date: "32 / 12 / 2019",
-        subject: "Take me far from here",
-        download: "डाउनलोड"
-      },
-      {
-        date: "33 / 12 / 2019",
-        subject: "Are you even there? I miss the way you felt to breathe",
-        download: "डाउनलोड"
+        date: "14 / 09  / 2015",
+        subject:
+          "हिंदी दिवस के अवसर पर मानव संसाधन विकास भारत सरकार मंत्री जी का हिंदी संदेश",
+        download: "डाउनलोड",
+        href:
+          "https://drive.google.com/open?id=1DMuJpZ94u_nQJba9uUvS2YEmypr_g0Xp"
       }
     ],
     breadcrumbs: [
