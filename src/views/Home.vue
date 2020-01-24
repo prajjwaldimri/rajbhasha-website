@@ -29,12 +29,22 @@ export default {
       {
         title: "",
         content: "",
+        image: require("@/assets/holi.jpg")
+      },
+      {
+        title: "",
+        content: "",
         image: require("@/assets/carriage.jpg")
       },
       {
         title: "",
         content: "",
-        image: require("@/assets/clouds.jpg")
+        image: require("@/assets/boy.jpg")
+      },
+      {
+        title: "",
+        content: "",
+        image: require("@/assets/mosque.jpg")
       } //Add a comma here before adding another slide
     ],
     breadcrumbs: [
