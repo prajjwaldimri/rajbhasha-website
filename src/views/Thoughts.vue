@@ -7,7 +7,7 @@
         .gandhi-message-section
           .about-text.text-yellow
             span.display-2 मैं हिन्दी के जरिए प्रांतीय भाषाओं को दबाना नहीं चाहता किन्तु उनके साथ हिन्दी को भी मिला देना चाहता हूँ। 
-          v-img(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
+          v-img.gandhi-image(src="@/assets/gandhi.jpg" aspect-ratio="0.7")
         .gandhi-additional-message-section
           .about-add-text.text-yellow
             span भारत में स्वतंत्रता के बाद संसदीय लोकतंत्र लगातार मजबूत हुआ है। भारतीय लोकतंत्र विश्व का सबसे बड़ा लोकतंत्र है जहां अनेक जातियों, धर्मों और भाषयों के बावजूत सबको बराबरी का हक मिला है। जहां स्त्री पुरुष के बीच कोई असमानता नहीं है बल्कि भारत के महिलायें जीवन के सभी क्षेत्रों में शीर्ष पर पहुंची हैं और हर क्षेत्र में वो अपनी क्षमता का प्रदर्शन करने मे सफल रही हैं ।
@@ -44,6 +44,18 @@ export default {
 <style lang="scss">
 .about {
   padding-bottom: 128px;
+}
+
+.gandhi-image {
+  @media (max-width: 1264px) {
+    position: relative;
+    z-index: 1;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+  }
 }
 
 .gandhi-message-section {
