@@ -31,7 +31,7 @@ export default {
           href: "/"
         },
         {
-          text: "अभिभाषण /विचार",
+          text: "अभिभाषण / विचार",
           disabled: true,
           href: "/thoughts"
         }

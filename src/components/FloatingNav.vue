@@ -14,46 +14,47 @@
       v-toolbar-items.expanded-menu
         .expanded-menu-items
           .members.floatingNavFlex
-            v-img(src="@/assets/member.jpg" height="70" width="140")
-            v-row.pl-3
-              router-link(to="/members")
-                v-btn(text).textDecorations.removeUnderline सदस्य
+            router-link(to="/members")
+              v-btn(text).textDecorations.removeUnderline
+                v-img(src="@/assets/member.jpg" height="70" width="140")
+                span.pl-3 सदस्य
           .message.floatingNavFlex
-            v-img(src="@/assets/sandesh1.jpg" height="70" width="140")
-            v-row.pl-3
-              router-link(to="/message")
-                v-btn(text).textDecorations संदेश
+            router-link(to="/message")
+              v-btn(text).textDecorations
+                v-img(src="@/assets/sandesh1.jpg" height="70" width="140")
+                span.pl-3 संदेश
 
           .lang-resolution.floatingNavFlex
-            v-img(src="@/assets/oath3.jpg" height="70" width="140")
-            v-row.pl-3
-              router-link(to="/resolution")
-                v-btn(text).textDecorations राजभाषा संकल्प
+            router-link(to="/resolution")
+              v-btn(text).textDecorations
+                v-img(src="@/assets/oath3.jpg" height="70" width="140")
+                span.pl-3 राजभाषा संकल्प
+
           .thoughts.floatingNavFlex
-            v-img(src="@/assets/thoughts.jpg" height="70" width="140")
-            v-row.pl-3
-              router-link(to="/thoughts")
-                v-btn(text).textDecorations अभिभाषण /विचार
+            router-link(to="/thoughts")
+              v-btn(text).textDecorations
+                v-img(src="@/assets/thoughts.jpg" height="70" width="140")
+                span.pl-3 अभिभाषण / विचार
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
       v-toolbar-items.expanded-menu2
         .expanded-menu-items2
           .workshop.floatingNavFlex
-            v-img(src="@/assets/workshop.jpg" height="70" width="140" )
-            v-row.pl-3
-              router-link(to="/workshop")
-                v-btn(text).textDecorations हिंदी कार्यशाला
+            router-link(to="/workshop")
+              v-btn(text).textDecorations
+                v-img(src="@/assets/workshop.jpg" height="70" width="140" )
+                span.pl-3 हिंदी कार्यशाला
           .office-order.floatingNavFlex
-            v-img(src="@/assets/officeorder.jpg" height="70" width="140")
-            v-row.pl-3
-              router-link(to="/officeOrder")
-                v-btn(text).textDecorations हिंदी कार्यालय आदेश
+            router-link(to="/officeOrder")
+              v-btn(text).textDecorations
+                v-img(src="@/assets/officeorder.jpg" height="70" width="140")
+                span.pl-3 हिंदी कार्यालय आदेश
           .hindi-day-programme.floatingNavFlex
-            v-img(src="@/assets/hindidivas1.jpg" height="70" width="140")
-            v-row.pl-3
-              router-link(to="/hindiDayProgram")
-                v-btn(text).textDecorations हिंदी दिवस कार्यक्रम
+            router-link(to="/hindiDayProgram")
+              v-btn(text).textDecorations
+                v-img(src="@/assets/hindidivas1.jpg" height="70" width="140")
+                span.pl-3 हिंदी दिवस कार्यक्रम
 
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -61,13 +62,14 @@
       v-toolbar-items.expanded-menu3
         .expanded-menu-items3
           .hindi-writing.floatingNavFlex
-            v-img(src="@/assets/hindiLetter.jpg" height="70" width="140")
-            v-row.pl-3
-              router-link(to="/writings")
-                v-btn(text).textDecorations.pl-3 हिंदी लेखा
+            router-link(to="/writings")
+              v-btn(text).textDecorations.pl-3
+                v-img(src="@/assets/hindiLetter.jpg" height="70" width="140")
+                span.pl-3 हिंदी लेखा
           .yearly-magazine.floatingNavFlex
-            v-img(src="@/assets/magazine.jpg" height="70" width="140")
-            v-btn(text).textDecorations.pl-3 वार्षिक पत्रिका
+            v-btn(text).textDecorations.pl-3
+              v-img(src="@/assets/magazine.jpg" height="70" width="140")
+              span.pl-3 वार्षिक पत्रिका
 
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
