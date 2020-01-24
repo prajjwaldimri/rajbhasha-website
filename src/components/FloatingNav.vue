@@ -321,7 +321,7 @@ export default {
           title: "आवश्यक लिंक्स",
           items: [
             {
-              title: "",
+              title: "लिंक्स",
               to: "/links"
             }
           ]

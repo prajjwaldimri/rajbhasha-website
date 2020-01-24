@@ -7,7 +7,7 @@
           h2 राजभाषा
           h2 प्रकोष्ठ
         .right
-          VueperSlides(autoplay fade :arrows="false" :slideRatio="3/5").no-shadow
+          VueperSlides(autoplay fade :arrows="false" :slideRatio="3/5" progress lazy).no-shadow
             VueperSlide(v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" :image="slide.image")
 </template>
 
@@ -118,5 +118,10 @@ export default {
     }
     width: 60%;
   }
+}
+
+.vueperslides__progress {
+  background: rgba(0, 0, 0, 0.25);
+  color: #feee77;
 }
 </style>
