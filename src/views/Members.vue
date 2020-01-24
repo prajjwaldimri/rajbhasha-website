@@ -13,6 +13,7 @@
               .team-member-profile-info
                 span.username.font-weight-light {{item.name}}
                 span.department.font-weight-medium.pt-1 {{item.department}}
+                span.department.font-weight-medium.pt-1 {{item.department2}}
                 v-row(justify="space-around").pt-2
                   a(:href = "item.email" target="_blank")
                     v-icon.mr-2 mdi-email
@@ -35,10 +36,11 @@ export default {
       items: [
         {
           name: "डॉ. गोपाल मुगेराय",
-          department: "निदेशक ,रा. प्रो. सं गोवा",
+          department: "निदेशक, रा. प्रो. सं. गोवा ",
+          department2: "अध्यक्ष, राजभाषा समिति",
           url: require("@/assets/Prof.(Dr.) Gopal Mugeraya.jpg"),
-          email: "mailto:",
-          phone: "tel:"
+          email: "mailto:patodirector@nitgoa.ac.in",
+          phone: "tel:+918322404200"
         },
         {
           name: "डॉ. शिव नारायण पाटीदार",
