@@ -31,10 +31,9 @@ export default {
     information: [
       //Add Code in here
       {
-        date: "Coming Soon",
+        date: "जल्द ही",
         subject:
-          "अभियांत्रिकी में वैज्ञानिक और तकनीकी शब्दावली के अनुप्रयोग पर दो दिनों की कार्यशाला",
-        office_order: "Download"
+          "अभियांत्रिकी में वैज्ञानिक और तकनीकी शब्दावली के अनुप्रयोग पर दो दिनों की कार्यशाला"
       }
     ],
     breadcrumbs: [

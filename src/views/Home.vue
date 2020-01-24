@@ -27,13 +27,13 @@ export default {
   data: () => ({
     slides: [
       {
-        title: "Slide #1",
-        content: "Slide content.",
+        title: "",
+        content: "",
         image: require("@/assets/carriage.jpg")
       },
       {
-        title: "Slide #2",
-        content: "Slide content.",
+        title: "",
+        content: "",
         image: require("@/assets/clouds.jpg")
       } //Add a comma here before adding another slide
     ],
