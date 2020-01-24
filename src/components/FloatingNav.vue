@@ -195,7 +195,7 @@ a:link {
   z-index: 2;
   &.active {
     z-index: 2;
-    opacity: 100%;
+    opacity: 1;
     // transform: translateY(-80%) translateX(-1rem);
     visibility: visible;
   }
