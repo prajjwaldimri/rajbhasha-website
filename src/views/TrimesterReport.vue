@@ -12,7 +12,7 @@
             tbody
               tr(v-for='item in information' :key='item.name')
                 td {{ item.duration }}
-                td 
+                td
                   a(:href="item.href" target="_blank" style="color:white;text-decoration-line:underline;") {{ item.download }}
 </template>
 
