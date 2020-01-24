@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-snackbar(v-model="snackbar" top color="#424242")
+  v-snackbar(v-model="snackbar" top color="#424242" :timeout="10000")
     router-link(to="/workshop").text-yellow {{text}}
     v-btn(icon @click="snackbar=false").text-yellow
       v-icon(color="#feee77") mdi-close
