@@ -1,17 +1,17 @@
 <template lang="pug">
   v-footer.d-lg-none
     .footer-contactus
-      h5 राजभाषा प्रकोष्ठ
-      h5 राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
-      h5 फार्मागुडी, पोंडा, गोवा &nbsp;
+      span.title राजभाषा प्रकोष्ठ
+      span.title राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
+      span.title फार्मागुडी, पोंडा, गोवा &nbsp;
         span(style="font-family: sans-serif; font-size: 1.1rem;")  - ४०३४०१
-    .footer-contactus-icon
+    .footer-contactus-icon.pt-2
       a(href = "mailto:xyz@gmail.com" target="_blank").pr-2
-        v-icon(size = "1.2rem") mdi-email
+        v-icon(size = "1.6rem") mdi-email
       a(href = "https://www.facebook.com/nitgoa/" target="_blank").pr-2
-        v-icon(size = "1.2rem") mdi-facebook-box
+        v-icon(size = "1.6rem") mdi-facebook-box
       a(href = "https://twitter.com/NITGoa_Official" target="_blank")
-        v-icon(size = "1.2rem") mdi-twitter
+        v-icon(size = "1.6rem") mdi-twitter
     span.title.footer-title निर्माता: <br/>
       a(href="https://prajjwal.me" target="_blank") प्रज्जवल डिमरी,&nbsp;
       a(href="https://www.linkedin.com/in/subarnadhar/" target="_blank") सुबर्णा धर,&nbsp;
@@ -43,6 +43,10 @@ span.title.footer-title {
   justify-content: center;
   flex: 1 1 0;
   width: 100%;
+  span.title {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300;
+  }
 }
 .footer-contactus-icon {
   display: flex;

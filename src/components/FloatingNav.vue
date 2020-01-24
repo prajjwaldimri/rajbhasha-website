@@ -34,7 +34,7 @@
             router-link(to="/thoughts")
               v-btn(text).textDecorations
                 v-img(src="@/assets/thoughts.jpg" height="70" width="140")
-                span.pl-3 अभिभाषण / विचार
+                span.pl-3 विचार
 
       ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -284,7 +284,7 @@ export default {
               to: "/resolution"
             },
             {
-              title: "अभिभाषण/विचार",
+              title: "विचार",
               to: "/thoughts"
             }
           ]

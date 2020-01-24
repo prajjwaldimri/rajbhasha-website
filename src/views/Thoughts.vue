@@ -31,7 +31,7 @@ export default {
           href: "/"
         },
         {
-          text: "अभिभाषण / विचार",
+          text: "विचार",
           disabled: true,
           href: "/thoughts"
         }
@@ -64,7 +64,7 @@ export default {
         line-height: 4rem;
         @media (max-width: 1264px) {
           text-align: justify;
-          font-size: 2rem !important;
+          font-size: 1.2rem !important;
           font-weight: 300;
           line-height: 3rem;
           letter-spacing: normal !important;
@@ -91,6 +91,9 @@ export default {
     flex-direction: column;
     span {
       font-size: 2rem;
+      @media (max-width: 1264px) {
+        font-size: 1.2rem;
+      }
       font-weight: 300;
       line-height: 3rem;
       letter-spacing: normal !important;
