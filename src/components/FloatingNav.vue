@@ -121,7 +121,7 @@
               h5 फार्मागुडी, पोंडा, गोवा &nbsp;
                 span(style="font-family: sans-serif; font-size: 1.1rem;")  - ४०३४०१
             .contactus-icon
-              a(href = "mailto:xyz@gmail.com" target="_blank")
+              a(href = "mailto:rajbhasha@nitgoa.ac.in" target="_blank")
                 v-icon(size = "1.2rem") mdi-email
               a(href = "https://www.facebook.com/nitgoa/" target="_blank")
                 v-icon(size = "1.2rem") mdi-facebook-box

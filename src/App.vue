@@ -1,5 +1,6 @@
 <template lang="pug">
   v-app
+    Notification
     transition(name="fade" mode="out-in")
       router-view
     FloatingNav
@@ -10,11 +11,13 @@
 <script>
 import FloatingNav from "@/components/FloatingNav.vue";
 import Footer from "@/components/Footer.vue";
+import Notification from "@/components/Notification.vue";
 export default {
   name: "App",
   components: {
     FloatingNav,
-    Footer
+    Footer,
+    Notification
   }
 };
 </script>
