@@ -50,15 +50,29 @@ export default {
   display: flex;
   align-items: center;
   height: 75vh;
-
+  @media (max-width: 1264px) {
+    flex-direction: column-reverse;
+    height: auto;
+  }
   .about-text {
     display: flex;
     flex-direction: column;
+
     span {
       &.display-2 {
         font-family: "Poppins", sans-serif !important;
         line-height: 4rem;
+        @media (max-width: 1264px) {
+          text-align: justify;
+          font-size: 2rem !important;
+          font-weight: 300;
+          line-height: 3rem;
+          letter-spacing: normal !important;
+        }
       }
+    }
+    @media (max-width: 1264px) {
+      width: 100%;
     }
     width: 70%;
   }
@@ -67,7 +81,11 @@ export default {
   display: flex;
   align-items: center;
   height: 68vh;
-
+  @media (max-width: 1264px) {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 1rem;
+  }
   .about-add-text {
     display: flex;
     flex-direction: column;
