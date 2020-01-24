@@ -7,14 +7,15 @@
           template(v-slot:default='')
             thead
               tr
-                th.text-left दिनांक
-                th.text-left विषय
-                th.text-left डाउनलोड
+                th.text-left लेखक
+                th.text-left लेख
+                th.text-left लिंक
             tbody
               tr(v-for='item in information' :key='item.name')
-                td {{ item.date }}
-                td {{ item.subject }}
-                td {{ item.pdf_file }}
+                td {{ item.author }}
+                td {{ item.title }}
+                td
+                  a(:href="item.href" target="_blank" style="color:white;text-decoration-line:underline;") लिंक
 </template>
 
 <script>
@@ -33,39 +34,59 @@ export default {
     information: [
       //Add Code in here
       {
-        date: "28 / 12 / 2019",
-        subject: "I saw what you emanate I held my hand to ",
-        pdf_file: "Download"
+        author: "रमानाथ अवस्थी",
+        title: "रचना और तुम",
+        href: "https://kaavyaalaya.org/rachna_aur_tum"
       },
       {
-        date: "29 / 12 / 2019",
-        subject: "A piece of it with me Passed through me like Gamma rays",
-        pdf_file: "Download"
+        author: "वाणी मुरारका",
+        title: "देश की नागरिक",
+        href: "https://kaavyaalaya.org/aise-desh-kee-naagarik"
       },
       {
-        date: "30 / 12 / 2019",
-        subject: "It burned my soul to see A thing with such beauty",
-        pdf_file: "Download"
+        author: "नागार्जुन",
+        title: "कालिदास",
+        href: "https://kaavyaalaya.org/kalidas"
       },
       {
-        date: "31 / 12 / 2019",
-        subject: "Stratosphere",
-        pdf_file: "Download"
+        author: "मीराबाई",
+        title: "पग घूँघरू बाँध मीरा नाची रे",
+        href: "https://kaavyaalaya.org/pag_ghunghroo_baandh_meeraa_naachee_re"
       },
       {
-        date: "31 / 12 / 2019",
-        subject: "Floating in your stare",
-        pdf_file: "Download"
+        author: "मीराबाई",
+        title: "मेरे तो गिरिधर गोपाल",
+        href: "https://kaavyaalaya.org/mere_to_giridhar_gopal"
       },
       {
-        date: "32 / 12 / 2019",
-        subject: "Take me far from here",
-        pdf_file: "Download"
+        author: "गोस्वामी तुलसीदास",
+        title: "बालकाण्ड (रामचरितमानस अंश)",
+        href: "https://kaavyaalaya.org/baalkaand"
       },
       {
-        date: "33 / 12 / 2019",
-        subject: "Are you even there? I miss the way you felt to breathe",
-        pdf_file: "Download"
+        author: "कबीरदास",
+        title: "काहे री नलिनी तूं कुमिलानी",
+        href: "https://kaavyaalaya.org/kaahe_re_nalinee"
+      },
+      {
+        author: "सूरदास",
+        title: "पिया बिन नागिन काली रात",
+        href: "https://kaavyaalaya.org/piyaa_bin_naagin_kaalee_raat"
+      },
+      {
+        author: "रवीन्द्रनाथ टगोर",
+        title: "क्यूँ भिजोये ना",
+        href: "https://kaavyaalaya.org/kyun_bhijoye_na"
+      },
+      {
+        author: "विनीत मिश्रा",
+        title: "शून्य कर दो",
+        href: "https://kaavyaalaya.org/shoonya-kar-do"
+      },
+      {
+        author: "साहिर लुधियानवी",
+        title: "परछाइयाँ",
+        href: "https://kaavyaalaya.org/parchhaaiyaan"
       }
     ],
     breadcrumbs: [
