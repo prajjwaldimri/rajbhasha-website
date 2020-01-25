@@ -12,7 +12,7 @@
       span.display-1 of
       span.display-2.pt-4.mb-5 Rajbhasha Prakosth
 
-      v-btn(color="#feee77" light x-large ripple).mt-5.launch-btn Launch!🚀
+      v-btn(color="#feee77" light x-large ripple to="/").mt-5.launch-btn Launch!🚀
 </template>
 
 <script>
@@ -20,8 +20,24 @@ export default {};
 </script>
 
 <style lang="scss">
+//TODO:  Uncomment this
+
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
+
+@-moz-document url-prefix() {
+  html,
+  body {
+    overflow: hidden !important;
+  }
+}
+
 .inauguration {
-  overflow: hidden;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
 
   &::before {
     position: absolute;
