@@ -11,6 +11,7 @@ import HindiDayProgram from "../views/HindiDayProgram.vue";
 import OfficeOrder from "../views/OfficeOrder.vue";
 import Writings from "../views/Writings.vue";
 import TrimesterReport from "../views/TrimesterReport.vue";
+import Inauguration from "../views/Inauguration.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
     path: "/",
     name: "home",
     component: Home
+  },
+  {
+    path: "/inauguration",
+    name: "inauguration",
+    component: Inauguration
   },
   {
     path: "/message",

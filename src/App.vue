@@ -1,10 +1,10 @@
 <template lang="pug">
   v-app
-    Notification
+    Notification(v-if="!isInauguration")
     transition(name="fade" mode="out-in")
       router-view
-    FloatingNav
-    Footer
+    FloatingNav(v-if="!isInauguration")
+    Footer(v-if="!isInauguration")
 
 </template>
 
@@ -18,6 +18,27 @@ export default {
     FloatingNav,
     Footer,
     Notification
+  },
+  data() {
+    return {
+      isInauguration: false
+    };
+  },
+  beforeMount() {
+    if (this.$route.name === "inauguration") {
+      this.isInauguration = true;
+    } else {
+      this.isInauguration = false;
+    }
+  },
+  watch: {
+    $route(to) {
+      if (to.name === "inauguration") {
+        this.isInauguration = true;
+      } else {
+        this.isInauguration = false;
+      }
+    }
   }
 };
 </script>
