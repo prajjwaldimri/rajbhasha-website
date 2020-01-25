@@ -4,13 +4,15 @@
       source(src="@/assets/Lights.mp4")
 
     .content
-      span.display-3 We Welcome
-      span.display-3 Prof. Gopal Mugeraya
-      span.display-3 Director, NIT Goa
-      span.display-3 For the Inauguration of
-      span.display-3 Rajbhasha Prakosth
+      span.display-1 We 
+      span.display-1.pb-6 welcome
+      span.display-2 Prof. Gopal Mugeraya
+      span.display-2.pb-6 Director, NIT Goa
+      span.display-1 for the Inauguration 
+      span.display-1 of
+      span.display-2.pt-4.mb-5 Rajbhasha Prakosth
 
-      v-btn(color="#feee77" light x-large ripple outlined) Launch!
+      v-btn(color="#feee77" light x-large ripple).mt-5.launch-btn Launch!🚀
 </template>
 
 <script>
@@ -44,8 +46,19 @@ export default {};
     flex-direction: column;
   }
 
-  span.display-3 {
+  span.display-1 {
     font-family: "Poppins" !important;
+    color: gray;
+  }
+  span.display-2 {
+    font-family: "Poppins" !important;
+    color: lightgray;
+  }
+
+  .launch-btn {
+    padding: 2rem 4rem !important;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
   }
 }
 
