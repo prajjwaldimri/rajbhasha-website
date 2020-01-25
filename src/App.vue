@@ -2,7 +2,7 @@
   v-app
     Notification(v-if="!isInauguration")
     transition(name="fade" mode="out-in")
-      router-view
+      router-view#top
     FloatingNav(v-if="!isInauguration")
     Footer(v-if="!isInauguration")
 
@@ -44,6 +44,10 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
+
 .text-yellow {
   color: #feee77;
 }

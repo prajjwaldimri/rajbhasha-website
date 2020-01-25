@@ -141,7 +141,7 @@
             v-list-item-content
               v-list-item-title(v-text="item.title").pt-2
 
-          v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to" @click="sheet=false")
+          v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to" @click="mobileNavItemClick")
             v-list-item-content
               v-list-item-title(v-text="subItem.title").pt-2
 
@@ -406,6 +406,16 @@ export default {
     menu5.addEventListener("mouseleave", activeRemover);
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
+  },
+  methods: {
+    mobileNavItemClick() {
+      this.sheet = false;
+    }
+  },
+  watch: {
+    $route() {
+      window.scrollTo(0, 0);
+    }
   }
 };
 </script>
