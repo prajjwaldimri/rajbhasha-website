@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Message from "../views/Message.vue";
 import Members from "../views/Members.vue";
+import StudentMembers from "../views/StudentMembers.vue";
 import Resolution from "../views/Resolution.vue";
 import Thoughts from "../views/Thoughts.vue";
 import Links from "../views/Links.vue";
@@ -34,6 +35,11 @@ const routes = [
     path: "/members",
     name: "members",
     component: Members
+  },
+  {
+    path: "/studentmembers",
+    name: "members",
+    component: StudentMembers
   },
   {
     path: "/resolution",

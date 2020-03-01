@@ -18,6 +18,11 @@
               v-btn(text).textDecorations.removeUnderline
                 v-img(src="@/assets/member.jpg" height="70" width="140")
                 span.pl-3 सदस्य
+          .studentmembers.floatingNavFlex
+            router-link(to="/studentmembers")
+              v-btn(text).textDecorations.removeUnderline
+                v-img(src="@/assets/studentmember.jpg" height="70" width="140")
+                span.pl-3 student सदस्य
           .message.floatingNavFlex
             router-link(to="/message")
               v-btn(text).textDecorations
@@ -274,6 +279,10 @@ export default {
             {
               title: "सदस्य",
               to: "/members"
+            },
+            {
+              title: "Student सदस्य",
+              to: "/studentmembers"
             },
             {
               title: "संदेश",
