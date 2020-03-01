@@ -4,13 +4,13 @@
 
     v-content
       v-container
-        .team-member
+        .student-team-member
           span.display-4.text-yellow.font-weight-medium Student सदस्य
-          .team-member-profiles
-            .team-member-profile(v-for="item in items" :key="item.id")
+          .student-team-member-studentprofiles
+            .student-team-member-studentprofile(v-for="item in items" :key="item.id")
               v-avatar(size="128")
                 v-img(:src="item.url" aspect-ratio="0.9")
-              .team-member-profile-info
+              .student-team-member-studentprofile-studentinfo
                 span.username.font-weight-light {{item.name}}
                 span.department.font-weight-medium.pt-1 {{item.department}}
                 span.department.font-weight-medium.pt-1 {{item.department2}}
@@ -87,7 +87,7 @@ export default {
   padding-bottom: 128px;
 }
 
-.team-member {
+.student-team-member {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ export default {
     text-align: center;
   }
 
-  &-profiles {
+  &-studentprofiles {
     :first-child {
       grid-column: 1;
       @media (max-width: 1264px) {
@@ -113,13 +113,13 @@ export default {
     grid-row-gap: 3rem;
   }
 
-  &-profile {
+  &-studentprofile {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    &-info {
+    &-studentinfo {
       display: flex;
       padding-top: 0.5rem;
       flex-direction: column;
