@@ -1,18 +1,18 @@
 <template lang="pug">
-  div
-    Navbar(:breadcrumbs="breadcrumbs")
-    v-content
-      v-container(fluid)
-        v-simple-table(:dense='dense' :fixed-header='fixedHeader' )
-          template(v-slot:default='')
-            thead
-              tr
-                th.text-left दिनांक
-                th.text-left विषय
-            tbody
-              tr(v-for='item in information' :key='item.name')
-                td {{ item.date }}
-                td {{ item.subject }}
+div
+  Navbar(:breadcrumbs="breadcrumbs")
+  v-content
+    v-container(fluid)
+      v-simple-table(:dense="dense", :fixed-header="fixedHeader")
+        template(v-slot:default="")
+          thead
+            tr
+              th.text-left दिनांक
+              th.text-left विषय
+          tbody
+            tr(v-for="item in information", :key="item.name")
+              td {{ item.date }}
+              td {{ item.subject }}
 </template>
 
 <script>
@@ -21,7 +21,7 @@ import Navbar from "@/components/Navbar.vue";
 export default {
   name: "home",
   components: {
-    Navbar
+    Navbar,
   },
 
   data: () => ({
@@ -32,22 +32,21 @@ export default {
       //Add Code in here
       {
         date: "जल्द ही",
-        subject:
-          "अभियांत्रिकी में वैज्ञानिक और तकनीकी शब्दावली के अनुप्रयोग पर दो दिनों की कार्यशाला"
-      }
+        subject: "हिंदी सप्ताह २०२१",
+      },
     ],
     breadcrumbs: [
       {
         text: "होम",
         disabled: false,
-        href: "/"
+        href: "/",
       },
       {
         text: "हिंदी कार्यशाला",
         disabled: true,
-        href: "/workshop"
-      }
-    ]
-  })
+        href: "/workshop",
+      },
+    ],
+  }),
 };
 </script>

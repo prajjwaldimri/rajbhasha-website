@@ -1,160 +1,173 @@
 <template lang="pug">
-  aside
-    v-toolbar(bottom).floatingNav.d-none.d-lg-block
-      v-toolbar-items.floatingNavItems
-        v-btn(text).nav-1.textDecorations  हमारे बारे में +
-        v-btn(text).nav-2.textDecorations कार्यकलाप +
-        v-btn(text).nav-3.textDecorations संसाधन +
-        router-link(to='/links')
-          v-btn(text).textDecorations.textDecorationsLink आवश्यक लिंक्स
-        v-btn(text).nav-5.textDecorations संपर्क करे +
-
-      ///////////////////////////////////////////////////////////////////////////////////////////////
-
-      v-toolbar-items.expanded-menu
-        .expanded-menu-items
-          .members.floatingNavFlex
-            router-link(to="/members")
-              v-btn(text).textDecorations.removeUnderline
-                v-img(src="@/assets/member.jpg" height="70" width="140")
-                span.pl-3 सदस्य
-          .studentmembers.floatingNavFlex
-            router-link(to="/studentmembers")
-              v-btn(text).textDecorations.removeUnderline
-                v-img(src="@/assets/studentmember.jpg" height="70" width="140")
-                span.pl-3 student सदस्य
-          .message.floatingNavFlex
-            router-link(to="/message")
-              v-btn(text).textDecorations
-                v-img(src="@/assets/sandesh1.jpg" height="70" width="140")
-                span.pl-3 संदेश
-
-          .lang-resolution.floatingNavFlex
-            router-link(to="/resolution")
-              v-btn(text).textDecorations
-                v-img(src="@/assets/oath3.jpg" height="70" width="140")
-                span.pl-3 राजभाषा संकल्प
-
-          .thoughts.floatingNavFlex
-            router-link(to="/thoughts")
-              v-btn(text).textDecorations
-                v-img(src="@/assets/thoughts.jpg" height="70" width="140")
-                span.pl-3 विचार
-
-      ///////////////////////////////////////////////////////////////////////////////////////////////
-
-      v-toolbar-items.expanded-menu2
-        .expanded-menu-items2
-          .workshop.floatingNavFlex
-            router-link(to="/workshop")
-              v-btn(text).textDecorations
-                v-img(src="@/assets/workshop.jpg" height="70" width="140" )
-                span.pl-3 हिंदी कार्यशाला
-          .office-order.floatingNavFlex
-            router-link(to="/officeOrder")
-              v-btn(text).textDecorations
-                v-img(src="@/assets/officeorder.jpg" height="70" width="140")
-                span.pl-3 हिंदी कार्यालय आदेश
-          .hindi-day-programme.floatingNavFlex
-            router-link(to="/hindiDayProgram")
-              v-btn(text).textDecorations
-                v-img(src="@/assets/hindidivas1.jpg" height="70" width="140")
-                span.pl-3 हिंदी दिवस कार्यक्रम
-
-
-      ///////////////////////////////////////////////////////////////////////////////////////////////
-
-      v-toolbar-items.expanded-menu3
-        .expanded-menu-items3
-          .hindi-writing.floatingNavFlex
-            router-link(to="/writings")
-              v-btn(text).textDecorations.pl-3
-                v-img(src="@/assets/hindiLetter.jpg" height="70" width="140")
-                span.pl-3 हिंदी लेखा
-          .yearly-magazine.floatingNavFlex
-            v-btn(text).textDecorations.pl-3
-              v-img(src="@/assets/magazine.jpg" height="70" width="140")
-              span.pl-3 वार्षिक पत्रिका
-
-
-      ///////////////////////////////////////////////////////////////////////////////////////////////
-
-      v-toolbar-items.expanded-menu5
-        .expanded-menu-items5
-          .span-items.floatingNavFlex.textDecorations
-            .creators
-              span.text-yellow निर्माता:
-              .creator-item
-                span प्रज्जवल डिमरी
-                v-row.creator-icon
-                  a(href = "https://prajjwal.me/" target="_blank")
-                    v-icon mdi-web
-                  a(href = "https://t.me/prajjwaldimri" target="_blank").pl-2
-                    v-icon mdi-telegram
-                  a(href = "https://github.com/prajjwaldimri" target="_blank").pl-2
-                    v-icon mdi-github-face
-              .creator-item
-                span सुबर्णा धर
-                v-row.creator-icon
-                  a(href = "https://www.linkedin.com/in/subarnadhar/" target="_blank")
-                    v-icon mdi-linkedin-box
-                  a(href = "https://t.me/subarnadhar" target="_blank").pl-2
-                    v-icon mdi-telegram
-                  a(href = "https://github.com/subarnadhar" target="_blank").pl-2
-                    v-icon mdi-github-face
-              .creator-item
-                span आर वी कौंडिन्या
-                v-row.creator-icon
-                  a(href = "https://www.linkedin.com/in/rv-kaundinya-4ba503110/" target="_blank")
-                    v-icon mdi-linkedin-box
-                  a(href = "https://t.me/kaundinya77" target="_blank").pl-2
-                    v-icon mdi-telegram
-                  a(href = "https://github.com/kaundinya77" target="_blank").pl-2
-                    v-icon mdi-github-face
-              .creator-item
-                span दीप पटेल
-                v-row.creator-icon
-                  a(href = "https://www.linkedin.com/in/deep-patel-71473519b/" target="_blank")
-                    v-icon mdi-linkedin-box
-                  a(href = "https://t.me/deep2_0" target="_blank").pl-2
-                    v-icon mdi-telegram
-                  a(href = "https://github.com/Deep-patell" target="_blank").pl-2
-                    v-icon mdi-github-face
-            .contactus
-              h5 राजभाषा प्रकोष्ठ
-              h5 राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
-              h5 फार्मागुडी, पोंडा, गोवा &nbsp;
-                span(style="font-family: sans-serif; font-size: 1.1rem;")  - ४०३४०१
-            .contactus-icon
-              a(href = "mailto:rajbhasha@nitgoa.ac.in" target="_blank")
-                v-icon(size = "1.2rem") mdi-email
-              a(href = "https://www.facebook.com/nitgoa/" target="_blank")
-                v-icon(size = "1.2rem") mdi-facebook-box
-              a(href = "https://twitter.com/NITGoa_Official" target="_blank")
-                v-icon(size = "1.2rem") mdi-twitter
-
-      ///////////////////////////////////////////////////////////////////////////////////////////////
-
-
-    v-btn(fab bottom color="grey" right fixed @click="sheet=true").d-lg-none.darken-3
-      v-icon(color="#feee77") mdi-menu
-    v-bottom-sheet(v-model="sheet").d-lg-none
-      v-list
-        v-subheader मेनू
-        v-list-group(v-for="item in items" :key="item.title" v-model="item.active" no-action)
-          template(v-slot:activator)
-            v-list-item-content
-              v-list-item-title(v-text="item.title").pt-2
-
-          v-list-item(v-for="subItem in item.items" :key="subItem.title" :to="subItem.to" @click="mobileNavItemClick")
-            v-list-item-content
-              v-list-item-title(v-text="subItem.title").pt-2
+aside
+  v-toolbar.floatingNav.d-none.d-lg-block(bottom)
+    v-toolbar-items.floatingNavItems
+      v-btn.nav-1.textDecorations(text) हमारे बारे में +
+      v-btn.nav-2.textDecorations(text) कार्यकलाप +
+      v-btn.nav-3.textDecorations(text) संसाधन +
+      router-link(to="/links")
+        v-btn.textDecorations.textDecorationsLink(text) आवश्यक लिंक्स
+      v-btn.nav-5.textDecorations(text) संपर्क करे +
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
+    v-toolbar-items.expanded-menu
+      .expanded-menu-items
+        .members.floatingNavFlex
+          router-link(to="/members")
+            v-btn.textDecorations.removeUnderline(text)
+              v-img(src="@/assets/member.jpg", height="70", width="140")
+              span.pl-3 सदस्य
+        .studentmembers.floatingNavFlex
+          router-link(to="/studentmembers")
+            v-btn.textDecorations.removeUnderline(text)
+              v-img(src="@/assets/studentmember.jpg", height="70", width="140")
+              span.pl-3 student सदस्य
+        .message.floatingNavFlex
+          router-link(to="/message")
+            v-btn.textDecorations(text)
+              v-img(src="@/assets/sandesh1.jpg", height="70", width="140")
+              span.pl-3 संदेश
 
+        .lang-resolution.floatingNavFlex
+          router-link(to="/resolution")
+            v-btn.textDecorations(text)
+              v-img(src="@/assets/oath3.jpg", height="70", width="140")
+              span.pl-3 राजभाषा संकल्प
 
+        .thoughts.floatingNavFlex
+          router-link(to="/thoughts")
+            v-btn.textDecorations(text)
+              v-img(src="@/assets/thoughts.jpg", height="70", width="140")
+              span.pl-3 विचार
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    v-toolbar-items.expanded-menu2
+      .expanded-menu-items2
+        .workshop.floatingNavFlex
+          router-link(to="/workshop")
+            v-btn.textDecorations(text)
+              v-img(src="@/assets/workshop.jpg", height="70", width="140")
+              span.pl-3 हिंदी कार्यशाला
+        .office-order.floatingNavFlex
+          router-link(to="/officeOrder")
+            v-btn.textDecorations(text)
+              v-img(src="@/assets/officeorder.jpg", height="70", width="140")
+              span.pl-3 हिंदी कार्यालय आदेश
+        .hindi-day-programme.floatingNavFlex
+          router-link(to="/hindiDayProgram")
+            v-btn.textDecorations(text)
+              v-img(src="@/assets/hindidivas1.jpg", height="70", width="140")
+              span.pl-3 हिंदी दिवस कार्यक्रम
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    v-toolbar-items.expanded-menu3
+      .expanded-menu-items3
+        .hindi-writing.floatingNavFlex
+          router-link(to="/writings")
+            v-btn.textDecorations.pl-3(text)
+              v-img(src="@/assets/hindiLetter.jpg", height="70", width="140")
+              span.pl-3 हिंदी लेखा
+        .yearly-magazine.floatingNavFlex
+          router-link(to="/yearlyMagazineEntry")
+            v-btn.textDecorations.pl-3(text)
+              v-img(src="@/assets/magazine.jpg", height="70", width="140")
+              span.pl-3 वार्षिक पत्रिका
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    v-toolbar-items.expanded-menu5
+      .expanded-menu-items5
+        .span-items.floatingNavFlex.textDecorations
+          .creators
+            span.text-yellow निर्माता:
+            .creator-item
+              span प्रज्जवल डिमरी
+              v-row.creator-icon
+                a(href="https://prajjwal.me/", target="_blank")
+                  v-icon mdi-web
+                a.pl-2(href="https://t.me/prajjwaldimri", target="_blank")
+                  v-icon mdi-telegram
+                a.pl-2(href="https://github.com/prajjwaldimri", target="_blank")
+                  v-icon mdi-github-face
+            .creator-item
+              span सुबर्णा धर
+              v-row.creator-icon
+                a(
+                  href="https://www.linkedin.com/in/subarnadhar/",
+                  target="_blank"
+                )
+                  v-icon mdi-linkedin-box
+                a.pl-2(href="https://t.me/subarnadhar", target="_blank")
+                  v-icon mdi-telegram
+                a.pl-2(href="https://github.com/subarnadhar", target="_blank")
+                  v-icon mdi-github-face
+            .creator-item
+              span आर वी कौंडिन्या
+              v-row.creator-icon
+                a(
+                  href="https://www.linkedin.com/in/rv-kaundinya-4ba503110/",
+                  target="_blank"
+                )
+                  v-icon mdi-linkedin-box
+                a.pl-2(href="https://t.me/kaundinya77", target="_blank")
+                  v-icon mdi-telegram
+                a.pl-2(href="https://github.com/kaundinya77", target="_blank")
+                  v-icon mdi-github-face
+            .creator-item
+              span दीप पटेल
+              v-row.creator-icon
+                a(
+                  href="https://www.linkedin.com/in/deep-patel-71473519b/",
+                  target="_blank"
+                )
+                  v-icon mdi-linkedin-box
+                a.pl-2(href="https://t.me/deep2_0", target="_blank")
+                  v-icon mdi-telegram
+                a.pl-2(href="https://github.com/Deep-patell", target="_blank")
+                  v-icon mdi-github-face
+          .contactus
+            h5 राजभाषा प्रकोष्ठ
+            h5 राष्ट्रीय प्रौद्योगिकी संस्थान गोवा
+            h5 फार्मागुडी, पोंडा, गोवा &nbsp;
+              span(style="font-family: sans-serif; font-size: 1.1rem") - ४०३४०१
+          .contactus-icon
+            a(href="mailto:rajbhasha@nitgoa.ac.in", target="_blank")
+              v-icon(size="1.2rem") mdi-email
+            a(href="https://www.facebook.com/nitgoa/", target="_blank")
+              v-icon(size="1.2rem") mdi-facebook-box
+            a(href="https://twitter.com/NITGoa_Official", target="_blank")
+              v-icon(size="1.2rem") mdi-twitter
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+  v-btn.d-lg-none.darken-3(fab, bottom, color="grey", right, fixed, @click="sheet = true")
+    v-icon(color="#feee77") mdi-menu
+  v-bottom-sheet.d-lg-none(v-model="sheet")
+    v-list
+      v-subheader मेनू
+      v-list-group(
+        v-for="item in items",
+        :key="item.title",
+        v-model="item.active",
+        no-action
+      )
+        template(v-slot:activator)
+          v-list-item-content
+            v-list-item-title.pt-2(v-text="item.title")
+
+        v-list-item(
+          v-for="subItem in item.items",
+          :key="subItem.title",
+          :to="subItem.to",
+          @click="mobileNavItemClick"
+        )
+          v-list-item-content
+            v-list-item-title.pt-2(v-text="subItem.title")
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////
 </template>
 
 <style lang="scss">
@@ -278,66 +291,66 @@ export default {
           items: [
             {
               title: "सदस्य",
-              to: "/members"
+              to: "/members",
             },
             {
               title: "Student सदस्य",
-              to: "/studentmembers"
+              to: "/studentmembers",
             },
             {
               title: "संदेश",
-              to: "/message"
+              to: "/message",
             },
             {
               title: "राजभाषा संकल्प",
-              to: "/resolution"
+              to: "/resolution",
             },
             {
               title: "विचार",
-              to: "/thoughts"
-            }
-          ]
+              to: "/thoughts",
+            },
+          ],
         },
         {
           title: "कार्यकलाप",
           items: [
             {
               title: "हिन्दी कार्यशाला",
-              to: "/workshop"
+              to: "/workshop",
             },
             {
               title: "हिन्दी कार्यशाला आदेश",
-              to: "/officeOrder"
+              to: "/officeOrder",
             },
             {
               title: "हिन्दी दिवस कार्यक्रम",
-              to: "/hindiDayProgram"
-            }
-          ]
+              to: "/hindiDayProgram",
+            },
+          ],
         },
         {
           title: "संसाधन",
           items: [
             {
               title: "हिन्दी लेखा",
-              to: "/writings"
+              to: "/writings",
             },
             {
               title: "वार्षिक पत्रिका",
-              to: "/"
-            }
-          ]
+              to: "/",
+            },
+          ],
         },
         {
           title: "आवश्यक लिंक्स",
           items: [
             {
               title: "लिंक्स",
-              to: "/links"
-            }
-          ]
-        }
-      ]
+              to: "/links",
+            },
+          ],
+        },
+      ],
     };
   },
   mounted() {
@@ -419,12 +432,12 @@ export default {
   methods: {
     mobileNavItemClick() {
       this.sheet = false;
-    }
+    },
   },
   watch: {
     $route() {
       window.scrollTo(0, 0);
-    }
-  }
+    },
+  },
 };
 </script>

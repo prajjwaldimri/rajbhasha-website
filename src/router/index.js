@@ -13,80 +13,86 @@ import OfficeOrder from "../views/OfficeOrder.vue";
 import Writings from "../views/Writings.vue";
 import TrimesterReport from "../views/TrimesterReport.vue";
 import Inauguration from "../views/Inauguration.vue";
+import YearlyMagazineEntry from "../views/YearlyMagazineEntry.vue";
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: Home
+    component: Home,
   },
   {
     path: "/inauguration",
     name: "inauguration",
-    component: Inauguration
+    component: Inauguration,
   },
   {
     path: "/message",
     name: "message",
-    component: Message
+    component: Message,
   },
   {
     path: "/members",
     name: "members",
-    component: Members
+    component: Members,
   },
   {
     path: "/studentmembers",
     name: "members",
-    component: StudentMembers
+    component: StudentMembers,
   },
   {
     path: "/resolution",
     name: "resolution",
-    component: Resolution
+    component: Resolution,
   },
   {
     path: "/thoughts",
     name: "thoughts",
-    component: Thoughts
+    component: Thoughts,
   },
   {
     path: "/links",
     name: "links",
-    component: Links
+    component: Links,
   },
   {
     path: "/workshop",
     name: "workshop",
-    component: Workshop
+    component: Workshop,
   },
   {
     path: "/hindiDayProgram",
     name: "hindiDayProgram",
-    component: HindiDayProgram
+    component: HindiDayProgram,
   },
   {
     path: "/officeOrder",
     name: "officeOrder",
-    component: OfficeOrder
+    component: OfficeOrder,
   },
   {
     path: "/writings",
     name: "writings",
-    component: Writings
+    component: Writings,
   },
   {
     path: "/trimesterReport",
     name: "trimesterReport",
-    component: TrimesterReport
-  }
+    component: TrimesterReport,
+  },
+  {
+    path: "/yearlyMagazineEntry",
+    name: "yearlyMagazineEntry",
+    component: YearlyMagazineEntry,
+  },
 ];
 
 const router = new VueRouter({
   mode: "hash",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;
