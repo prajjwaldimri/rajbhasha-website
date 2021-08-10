@@ -22,7 +22,7 @@ aside
           router-link(to="/studentmembers")
             v-btn.textDecorations.removeUnderline(text)
               v-img(src="@/assets/studentmember.jpg", height="70", width="140")
-              span.pl-3 student सदस्य
+              span.pl-3 विद्यार्थी सदस्य
         .message.floatingNavFlex
           router-link(to="/message")
             v-btn.textDecorations(text)
@@ -90,7 +90,10 @@ aside
                   v-icon mdi-web
                 a.pl-2(href="https://t.me/prajjwaldimri", target="_blank")
                   v-icon mdi-telegram
-                a.pl-2(href="https://github.com/prajjwaldimri", target="_blank")
+                a.pl-2(
+                  href="https://github.com/prajjwaldimri",
+                  target="_blank"
+                )
                   v-icon mdi-github-face
             .creator-item
               span सुबर्णा धर
@@ -143,7 +146,14 @@ aside
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
-  v-btn.d-lg-none.darken-3(fab, bottom, color="grey", right, fixed, @click="sheet = true")
+  v-btn.d-lg-none.darken-3(
+    fab,
+    bottom,
+    color="grey",
+    right,
+    fixed,
+    @click="sheet = true"
+  )
     v-icon(color="#feee77") mdi-menu
   v-bottom-sheet.d-lg-none(v-model="sheet")
     v-list

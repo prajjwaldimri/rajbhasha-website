@@ -1,26 +1,22 @@
 <template lang="pug">
-  .about
-    Navbar(:breadcrumbs="breadcrumbs")
+.about
+  Navbar(:breadcrumbs="breadcrumbs")
 
-    v-content
-      v-container
-        .student-team-member
-          span.display-4.text-yellow.font-weight-medium Student सदस्य
-          .student-team-member-studentprofiles
-            .student-team-member-studentprofile(v-for="item in items" :key="item.id")
-              v-avatar(size="128")
-                v-img(:src="item.url" aspect-ratio="0.9")
-              .student-team-member-studentprofile-studentinfo
-                span.username.font-weight-light {{item.name}}
-                span.department.font-weight-medium.pt-1 {{item.department}}
-                span.department.font-weight-medium.pt-1 {{item.department2}}
-                v-row(justify="space-around").pt-2
-                  a(:href = "item.email" target="_blank")
-                    v-icon.mr-2 mdi-email
-                  a(:href = "item.phone" target="_blank")
-                    v-icon.mr-2 mdi-phone
-
-
+  v-content
+    v-container
+      .student-team-member
+        span.display-4.text-yellow.font-weight-medium विद्यार्थी सदस्य
+        .student-team-member-studentprofiles
+          .student-team-member-studentprofile(
+            v-for="item in items",
+            :key="item.id"
+          )
+            v-avatar(size="180")
+              v-img(:src="item.url", aspect-ratio="0.9")
+            .student-team-member-studentprofile-studentinfo
+              span.username.font-weight-light {{ item.name }}
+              span.department.font-weight-medium.pt-1 {{ item.department }}
+              span.department.font-weight-medium.pt-1 {{ item.department2 }}
 </template>
 
 <script>
@@ -29,56 +25,44 @@ import Navbar from "@/components/Navbar.vue";
 export default {
   name: "home",
   components: {
-    Navbar
+    Navbar,
   },
   data() {
     return {
       items: [
         {
-          name: "Amit Verma",
-          department: "निदेशक, रा. प्रो. सं. गोवा ",
+          name: "अमित वर्मा",
+
           url: require("@/assets/Amit Verma.jpg"),
-          email: "email_id@nitgoa.ac.in",
-          phone: "tel:+918322404200"
         },
         {
-          name: "डॉ. शिव नारायण पाटीदार",
-          department: "सहायक प्राध्यापक",
+          name: "स्नेहिल मिश्रा",
+
           url: require("@/assets/student2.jpg"),
-          email: "mailto:shivnarayan.patidar@nitgoa.ac.in ",
-          phone: "tel:"
         },
         {
-          name: "डॉ. प्रगति पटेल",
-          department: "सहायक प्राध्यापक ",
+          name: "विशाखा घाडी",
+
           url: require("@/assets/student3.jpg"),
-          email: "mailto:pragati@nitgoa.ac.in",
-          phone: "tel:+91-832-2404204"
         },
 
-        {
-          name: "श्री संदीप जैसवार",
-          department: "बहुविध कार्य कर्मचारी ",
-          url: require("@/assets/student4.jpg"),
-          email: "mailto:sandeep8025@nitgoa.ac.in",
-          phone: "tel:"
-        } // Add new members here
+        // Add new members here
         //Add a comma here before adding another member
       ],
       breadcrumbs: [
         {
           text: "होम",
           disabled: false,
-          href: "/"
+          href: "/",
         },
         {
-          text: "Student सदस्य",
+          text: "विद्यार्थी सदस्य",
           disabled: true,
-          href: "/members"
-        }
-      ]
+          href: "/members",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -109,7 +93,7 @@ export default {
     }
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 3rem;
   }
 
