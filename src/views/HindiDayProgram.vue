@@ -11,6 +11,11 @@ div
         h3.poppins-font-resolution.pt-8.text-yellow(
           style="text-align: center; font-weight: bold"
         ) "अभिरुचि की अभिव्यक्ति" को प्रस्तुत करने हेतु लिंक ("गूगल फ़ॉर्म "): https://docs.google.com/forms/d/1piZAIuuV7jN3XvL1JraZpPOLC1YdwgxhBoMpWifZpWc/edit
+          a(
+            href="https://docs.google.com/forms/d/1piZAIuuV7jN3XvL1JraZpPOLC1YdwgxhBoMpWifZpWc/edit",
+            target="_blank"
+          )
+            span.text-yellow https://docs.google.com/forms/d/1piZAIuuV7jN3XvL1JraZpPOLC1YdwgxhBoMpWifZpWc/edit
         h3.poppins-font-resolution.pt-8(
           style="text-align: justify; font-weight: bold"
         ) कृपया ध्यान दें:-

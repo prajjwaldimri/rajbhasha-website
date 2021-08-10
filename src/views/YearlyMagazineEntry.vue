@@ -28,12 +28,19 @@ div
         h2.poppins-font-resolution.pt-3(style="text-align: justify") - सौरभ सिंह चौहान (18MCE1022,बी.टेक, चतुर्थ वर्ष ): 7905020037;84.sschauhan@gmail.com
         h2.poppins-font-resolution.pt-8.text-yellow(
           style="text-align: center; font-weight: bold"
-        ) "अभिरुचि की अभिव्यक्ति" को प्रस्तुत करने हेतु लिंक ("गूगल फ़ॉर्म "): https://docs.google.com/forms/d/1oWkm2W1-sxmDG2CgbOWz4Rk-cv0k4evD54UufYmxQ7M/edit
+        ) "अभिरुचि की अभिव्यक्ति" को प्रस्तुत करने हेतु लिंक ("गूगल फ़ॉर्म "):
+          a(
+            href="https://docs.google.com/forms/d/1oWkm2W1-sxmDG2CgbOWz4Rk-cv0k4evD54UufYmxQ7M/edit",
+            target="_blank"
+          )
+            span.text-yellow https://docs.google.com/forms/d/1oWkm2W1-sxmDG2CgbOWz4Rk-cv0k4evD54UufYmxQ7M/edit
+
         h2.poppins-font-resolution.pt-8(style="text-align: justify") शुभकामनाएं,
         h2.poppins-font-resolution.pt-1(style="text-align: justify") शिवनारायण पाटीदार,
+        h2.poppins-font-resolution.pt-1(style="text-align: justify") संयोजक, राजभाषा समिति,
         h2.poppins-font-resolution.pt-1(
           style="text-align: justify; padding-bottom: 2rem"
-        ) संयोजक, राजभाषा समिति, राष्ट्रीय प्रौद्योगिकी संस्थान गोवा।
+        ) राष्ट्रीय प्रौद्योगिकी संस्थान गोवा।
         h2.poppins-font-resolution.pt-3(style="text-align: justify") नियम-निर्देश :
         h2.poppins-font-resolution.pt-5(
           style="text-align: justify; padding-bottom: 5rem"
@@ -51,11 +58,17 @@ div
         h2.poppins-font-resolution.pt-8.text-yellow(
           style="text-align: center; font-weight: bold"
         ) Google link for submission of "expression of interest": https://docs.google.com/forms/d/1oWkm2W1-sxmDG2CgbOWz4Rk-cv0k4evD54UufYmxQ7M/edit
+          a(
+            href="https://docs.google.com/forms/d/1oWkm2W1-sxmDG2CgbOWz4Rk-cv0k4evD54UufYmxQ7M/edit",
+            target="_blank"
+          )
+            span.text-yellow https://docs.google.com/forms/d/1oWkm2W1-sxmDG2CgbOWz4Rk-cv0k4evD54UufYmxQ7M/edit
         h2.poppins-font-resolution.pt-8(style="text-align: justify") Best Wishes,
         h2.poppins-font-resolution.pt-1(style="text-align: justify") Dr. Shivnarayan Patidar,
+        h2.poppins-font-resolution.pt-1(style="text-align: justify") Convenor, Rajbhasha Samiti,
         h2.poppins-font-resolution.pt-1(
           style="text-align: justify; padding-bottom: 2rem"
-        ) Convenor, Rajbhasha Samiti, NIT Goa
+        ) National Institute of Technology Goa
         h2.poppins-font-resolution.pt-3(style="text-align: justify") Instructions:
         h2.poppins-font-resolution.pt-5(
           style="text-align: justify; padding-bottom: 5rem"
