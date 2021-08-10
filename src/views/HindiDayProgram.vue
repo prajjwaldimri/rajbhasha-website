@@ -10,7 +10,7 @@ div
         h3.poppins-font-resolution.pt-3(style="text-align: justify") "हिंदी सप्ताह २०२१" का शुभारंभ दिनांक १४ सितंबर २०२१ को संध्याकाल ४ बजे Google Meet के माध्यम से किया जायेगा तथा इसका विवरण एवं आमंत्रण शीघ्र ही प्रेषित किया जायेगा। "हिंदी सप्ताह २०२१" के दौरान विभिन्न प्रतियोगितओं का भी आयोजन किया जायेगा एवं आप सब से अनुरोध है कि इन प्रतियोगिताओं में बढ़-चढ़ कर हिस्सा लें और कार्यक्रम को सफल बनाएँ। धन्यवाद।
         h3.poppins-font-resolution.pt-8.text-yellow(
           style="text-align: center; font-weight: bold"
-        ) "अभिरुचि की अभिव्यक्ति" को प्रस्तुत करने हेतु लिंक ("गूगल फ़ॉर्म "): https://docs.google.com/forms/d/1piZAIuuV7jN3XvL1JraZpPOLC1YdwgxhBoMpWifZpWc/edit
+        ) "अभिरुचि की अभिव्यक्ति" को प्रस्तुत करने हेतु लिंक ("गूगल फ़ॉर्म "):
           a(
             href="https://docs.google.com/forms/d/1piZAIuuV7jN3XvL1JraZpPOLC1YdwgxhBoMpWifZpWc/edit",
             target="_blank"

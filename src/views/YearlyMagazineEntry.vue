@@ -57,7 +57,7 @@ div
         h2.poppins-font-resolution.pt-3(style="text-align: justify") - Saurabh Singh Chauhan (18MCE1022,B.tech Final year): 7905020037; 84.sschauhan@gmail.com
         h2.poppins-font-resolution.pt-8.text-yellow(
           style="text-align: center; font-weight: bold"
-        ) Google link for submission of "expression of interest": https://docs.google.com/forms/d/1oWkm2W1-sxmDG2CgbOWz4Rk-cv0k4evD54UufYmxQ7M/edit
+        ) Google link for submission of "expression of interest":
           a(
             href="https://docs.google.com/forms/d/1oWkm2W1-sxmDG2CgbOWz4Rk-cv0k4evD54UufYmxQ7M/edit",
             target="_blank"
